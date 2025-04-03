@@ -5,6 +5,8 @@
   |============================
 */
 
+@import 'node_modules/modern-normalize/modern-normalize.css';
+
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
