@@ -5,15 +5,34 @@
   margin: 0 auto;
   padding: 0 16px;
 }
+
+section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 32px;
+  }
+
+  section {
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
+
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
   .container {
-    max-width: 1200px;
+    max-width: 1440px;
+
+  }
+
+  section {
+    padding-top: 82px;
+    padding-bottom: 82px;
   }
 }
