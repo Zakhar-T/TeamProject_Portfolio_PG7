@@ -18,27 +18,36 @@
     <header class="header">
     <div class="container">
         <nav class="nav">
-            <a class="nav-logo" href="./index.html" aria-label="Site logo">
-                <img class="logo-img" src="/TeamProject_Portfolio_PG7/assets/logo-DU78bRzU.jpg" alt="Site logo" srcset="" width="80"
-                    height="80">jefferson*</a>
+            <a class="nav-logo" href="./index.html" aria-label="site logo">
+                <img class="logo-img" src="/TeamProject_Portfolio_PG7/assets/logo-DU78bRzU.jpg" alt="Site logo" width="80" height="80">jefferson*</a>
+            <button class="header-openmenu hdr-btn" id="menu"><span class="menu-label"
+                    aria-label="open menu">Menu</span>
+                <svg class="header-burger hdr-icon" width="28" height="28">
+                    <use href="/TeamProject_Portfolio_PG7/assets/sprite-DsCr-7CH.svg#burger"></use>
+                </svg>
+            </button>
             <div class="menu">
-                <button class="menu-btn" id="menu">Menu</button>
+                <button class="header-closemenu hdr-btn">
+                    <svg class="hdr-icon" width="28" height="28">
+                        <use href="/TeamProject_Portfolio_PG7/assets/sprite-DsCr-7CH.svg#cross"></use>
+                    </svg>
+                </button>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a class="nav-link {=$highlight-curr}" href="#AboutMe">About&nbsp;me</a>
+                        <a class="nav-link {=$highlight-curr}" href="#about-me">About&nbsp;me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {=$highlight-curr}" href="#Benefits">Benefits</a>
+                        <a class="nav-link {=$highlight-curr}" href="#benefits">Benefits</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {=$highlight-curr}" href="#Projects">Projects</a>
+                        <a class="nav-link {=$highlight-curr}" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {=$highlight-curr}" href="#FAQ">FAQ</a>
+                        <a class="nav-link {=$highlight-curr}" href="#faq">FAQ</a>
                     </li>
                 </ul>
+                <a class="nav-orderbtn" href="#work-together" aria-label="Go to order form">Order the project</a>
             </div>
-            <a class="nav-orderBtn button" href="#WorkTogether" aria-label="Go to order form">Order the project</a>
         </nav>
     </div>
 </header>
