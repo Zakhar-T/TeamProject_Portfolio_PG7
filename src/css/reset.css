@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+body,
 h1,
 h2,
 h3,
@@ -25,10 +26,19 @@ ul {
 }
 
 a {
+  color: currentColor;
   text-decoration: none;
 }
 
+button,
+input,
+textarea {
+  font-family: inherit;
+  color: currentColor;
+}
+
 button {
+  padding: 0;
   cursor: pointer;
 }
 

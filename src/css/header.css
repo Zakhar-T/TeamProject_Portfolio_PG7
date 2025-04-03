@@ -1,0 +1,133 @@
+/* Styles for Mobile devices */
+.header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    padding-top: 20px;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hdr-icon {
+    stroke: currentColor;
+
+}
+
+.hdr-btn {
+    background-color: transparent;
+    border: none;
+    height: 39px;
+}
+
+.nav-logo {
+    display: flex;
+    gap: 8px;
+    font-size: 20px;
+}
+
+.logo-img {
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.nav-link:focus {
+    color: #ed3b44;
+}
+
+.nav-orderbtn:active {
+    transform: scale(0.98);
+}
+
+@media only screen and (max-width: 767px) {
+
+    .menu-label,
+    .menu {
+        display: none;
+    }
+
+    .hdr-btn {
+        width: 28px;
+        height: 28px;
+
+    }
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+
+    .header-burger,
+    .header-closemenu {
+        display: none;
+    }
+
+
+    .header-openmenu {
+        margin: 0 auto;
+        padding: 10px;
+
+        line-height: 19px;
+        text-decoration: underline;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 57px;
+        right: 50%;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        width: fit-content;
+        overflow: hidden;
+        padding: 10px;
+        transform: translate(50%, -50%) scaleY(0);
+        transition: transform 200ms ease;
+    }
+
+    .header-openmenu:focus~.menu>.nav-list,
+    .nav-list:focus {
+        transform: translate(50%, 0) scaleY(100%);
+    }
+
+    .nav-orderbtn {
+        display: block;
+        padding: 18px 24px;
+        border-radius: 60px;
+        text-align: center;
+        width: 163px;
+        height: fit-content;
+        background-color: #ed3b44;
+        transition: transform 200ms ease, background-color 200ms ease;
+
+        line-height: 19px;
+    }
+
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+
+    .header-openmenu:hover~.menu>.nav-list,
+    .nav-list:hover {
+        transform: translate(50%, 0) scaleY(100%);
+    }
+
+    .nav-link:hover {
+        color: #ed3b44;
+    }
+
+    .nav-orderbtn {
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .nav-orderbtn:hover {
+        background-color: #e0373f;
+    }
+
+
+}
