@@ -1,0 +1,113 @@
+.section {
+    padding: 16px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; 
+    width: 344px;
+    
+    
+    
+}
+
+.text-section {
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+padding-bottom: 32px;
+
+}
+
+.icons-box {
+border-radius: 10px;
+width: 48px;
+height: 48px;
+background-color: red;
+}
+
+.svg {
+    stroke: #fafafa;
+    margin: 12px;
+}
+
+.column {
+    background: #222;
+    padding: 24px;
+    border-radius: 20px;
+    width: 344px;
+    
+}
+
+.text {
+font-weight: 600;
+font-size: 20px;
+line-height: 150%;
+letter-spacing: -0.02em;
+color: #fafafa;
+padding-top: 64px;
+padding-bottom: 8px;
+text-align: left;
+}
+
+.text-column {
+width: 296px;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: -0.02em;
+color: rgba(250, 250, 250, 0.6);
+
+}
+
+.benefits-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: start;
+    
+    
+}
+
+
+.button {
+border-radius: 60px;
+padding: 18px 36px;
+width: 187px;
+margin-top: 32px;
+background-color: #222;
+color: #fafafa;
+cursor: pointer;
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    .section {
+        width: 768px;
+        padding: 32px;
+    }
+   
+}
+
+@media only screen and (min-width: 1158px) {
+    .section {
+        width: 1158px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .benefits-list {
+        justify-content: flex-end;
+    }
+
+    .column {
+        width: 360px; 
+    }
+
+    .button {
+        align-self: center; 
+    }
+}
