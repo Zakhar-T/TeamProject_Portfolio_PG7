@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rewiews-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 32px;
+  position: relative;
+}
+.rewiews-item {
+  padding: 32px 24px;
+  border-radius: 20px;
+  border: solid 1px #fafafa33;
+}
+
+.rewiews-img {
+  width: 48px;
+  height: auto;
+  margin-bottom: 32px;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+}
+
+.rewiews-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fafafa;
+  margin-bottom: 8px;
+  line-height: 30px;
+  letter-spacing: -2%;
+}
+.rewiews-text-content {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fafafa99;
+  line-height: 24px;
+  letter-spacing: -2%;
+}
+
+.list-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.rewiews-button {
+  border-radius: 60px;
+  border: solid 1px #fafafa80;
+  padding: 18px;
+  background-color: #fafafa33;
+}
+
+.icon {
+  fill: #FAFAFA;
+}
+
+.rewiews-button-left {
+  transform: scaleX(-1);
+}
+
+.button-disabled {
+  border-color: #FAFAFA33;
+}
+
+.button-disabled .icon {
+  fill: #3B3B3B;
+}
+
