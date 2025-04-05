@@ -5,17 +5,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 const body = document.body;
 const form = document.querySelector('.work-together-form');
-const emailText = document.querySelector('.email-span-js');
-const commentsText = document.querySelector('.comments-span-js');
 
-form.addEventListener("input", inputText);
-
-function inputText(event) {
-    const inputEmailText = form.elements.userEmail.value;
-    const inputCommentsText = form.elements.userComments.value;
-    emailText.textContent = inputEmailText;
-    commentsText.textContent = inputCommentsText;
-}
 
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
@@ -50,6 +40,8 @@ function submitForm(evt) {
             const modal1 = modal.parentNode;
             body.classList.add('mobMenuOpen');
 
+            body.classList.add('on-scroll');
+
             body.addEventListener('keydown', escClose);
             function escClose(evt) {
                 if (evt.keyCode === 27) {
@@ -57,6 +49,7 @@ function submitForm(evt) {
                     if (modal1.classList.contains('basicLightbox__placeholder')) {
                         body.classList.remove('mobMenuOpen');
                         body.removeEventListener('keydown', escClose);
+                        body.classList.toggle('on-scroll');
                     }
                 }
             }
@@ -66,6 +59,8 @@ function submitForm(evt) {
                     if (modal1.classList.contains('basicLightbox__placeholder')) {
                         body.classList.remove('mobMenuOpen');
 
+                        body.classList.toggle('on-scroll');
+
                     }
                 }
             });
@@ -73,6 +68,8 @@ function submitForm(evt) {
                 instance.close();
                 if (modal1.classList.contains('basicLightbox__placeholder')) {
                     body.classList.remove('mobMenuOpen');
+
+                    body.classList.toggle('on-scroll');
                 }
             };
             userEmail.value = '';

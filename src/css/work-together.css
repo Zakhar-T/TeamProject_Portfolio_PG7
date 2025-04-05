@@ -1,14 +1,8 @@
-section {
-  /* background-color: grey; */
-}
-
 .work-together-section {
   color: #fafafa;
   font-size: 14px;
   font-style: normal;
-  font-weight: 500;
   line-height: normal;
-  letter-spacing: -0.02em;
 }
 
 @media screen and (min-width: 768px) {
@@ -18,7 +12,7 @@ section {
   }
 }
 .section {
-  background-image: url(../img/work-together/1x-min.png);
+  background-image: url(../img/work-together/bg@1x.png);
   background-repeat: no-repeat;
   background-position: 650% 100%;
   background-size: auto 100%;
@@ -26,7 +20,7 @@ section {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .section {
-    background-image: url(../img/work-together/2x-min.png);
+    background-image: url(../img/work-together/bg@2x.png);
   }
 }
 
@@ -276,13 +270,12 @@ textarea:-webkit-autofill::first-line {
   z-index: 99999;
   top: 50%;
   left: 50%;
-  background-color: #fcfcfc;
-  transform: translate(-50%, -50%);
+  width: 343px;
+  min-height: 246px;
   border-radius: 20px;
   border: 1px solid #fafafa1a;
   background-color: #1c1d20;
-  width: 343px;
-  min-height: 246px;
+  transform: translate(-50%, -50%);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms linear;
@@ -300,19 +293,16 @@ textarea:-webkit-autofill::first-line {
   }
 }
 .modal-btn {
-  display: flex;
   position: absolute;
-  top: 20px;
+  top: 15px;
   right: 20px;
   width: 22px;
   height: 22px;
   background-color: transparent;
   border: none;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  color: #fafafa;
 }
 
 .modal-btn:hover .modal-btn-icon,
@@ -326,7 +316,7 @@ textarea:-webkit-autofill::first-line {
 }
 
 .modal-wrapper {
-  padding: 64px 32px 64px 32px;
+  padding: 64px 32px;
 }
 
 @media screen and (min-width: 768px) {
@@ -338,10 +328,9 @@ textarea:-webkit-autofill::first-line {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
-  letter-spacing: -0.02em;
   text-align: center;
   color: #fafafa;
-  padding-bottom: 8px;
+  margin-bottom: 16px;
 }
 @media screen and (max-width: 374px) {
   .modal-title {
@@ -351,16 +340,15 @@ textarea:-webkit-autofill::first-line {
 }
 @media screen and (min-width: 768px) {
   .modal-title {
-    letter-spacing: -0.06em;
+    letter-spacing: -0.02em;
   }
 }
 .modal-text {
   font-size: 16px;
-  font-weight: 500;
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   text-align: center;
-  color: #fafafa99;
+  color: rgba(250, 250, 250, 0.6);
 }
 
 @media screen and (max-width: 374px) {
@@ -368,4 +356,20 @@ textarea:-webkit-autofill::first-line {
     font-size: 14px;
     line-height: 1.2;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-text {
+    font-size: 16px;
+    letter-spacing: -0.02em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .modal-text {
+    line-height: 1.5;
+  }
+}
+.on-scroll {
+  overflow: hidden;
 }
