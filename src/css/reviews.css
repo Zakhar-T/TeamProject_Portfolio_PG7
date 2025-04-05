@@ -1,22 +1,13 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.rewiews-list {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
+.reviews-list {
   margin-bottom: 32px;
-  position: relative;
 }
-.rewiews-item {
+.reviews-item {
   padding: 32px 24px;
   border-radius: 20px;
   border: solid 1px #fafafa33;
 }
 
-.rewiews-img {
+.reviews-img {
   width: 48px;
   height: auto;
   margin-bottom: 32px;
@@ -24,7 +15,7 @@
   background-color: #e0e0e0;
 }
 
-.rewiews-name {
+.reviews-name {
   font-size: 20px;
   font-weight: 600;
   color: #fafafa;
@@ -32,40 +23,48 @@
   line-height: 30px;
   letter-spacing: -2%;
 }
-.rewiews-text-content {
+.reviews-text-content {
   font-size: 16px;
   font-weight: 500;
   color: #fafafa99;
   line-height: 24px;
   letter-spacing: -2%;
 }
-
-.list-buttons {
+.reviews-button-box {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   gap: 20px;
 }
-
-.rewiews-button {
+.reviews-button {
   border-radius: 60px;
   border: solid 1px #fafafa80;
   padding: 18px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  }
+
+  .reviews-button:hover {
   background-color: #fafafa33;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
-
+.reviews-button:active {
+  background-color: #fafafa66;
+  transition: all 0.3s ease-in-out;
+}
 .icon {
-  fill: #FAFAFA;
+  stroke: white;
+  fill: none;
 }
 
-.rewiews-button-left {
+.reviews-button-prev {
   transform: scaleX(-1);
 }
 
-.button-disabled {
-  border-color: #FAFAFA33;
+.reviews-button:disabled {
+  border-color: #fafafa33;
 }
 
-.button-disabled .icon {
-  fill: #3B3B3B;
+.reviews-button:disabled .icon {
+  stroke: #3b3b3b;
 }
-
