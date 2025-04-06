@@ -3,41 +3,42 @@
   font-size: 14px;
   font-style: normal;
   line-height: normal;
-}
 
-@media screen and (min-width: 768px) {
-  .work-together-section {
-    padding-top: 88px;
-    padding-bottom: 169px;
-  }
-}
-.section {
   background-image: url(../img/work-together/bg@1x.png);
   background-repeat: no-repeat;
   background-position: 650% 100%;
   background-size: auto 100%;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .section {
+@media screen and (min-width: 768px) {
+  .work-together-section {
+    padding-top: 136px;
+    padding-bottom: 169px;
+  }
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .work-together-section {
     background-image: url(../img/work-together/bg@2x.png);
   }
 }
 
 @media screen and (max-width: 374px) {
-  .section {
+  .work-together-section {
     background-position: -4000% 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .section {
+  .work-together-section {
     background-position: 160% 100%;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .section {
+  .work-together-section {
     background-position: 105% 100%;
   }
 }
@@ -48,6 +49,7 @@
     padding-right: 196px;
   }
 }
+
 /* logo, title */
 .work-together-title {
   display: flex;
@@ -66,11 +68,13 @@
     margin-bottom: 18px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .work-together-title {
     max-width: 542px;
   }
 }
+
 .work-together-image {
   width: 44px;
   height: 44px;
@@ -145,6 +149,7 @@ input:-webkit-autofill:active {
   -webkit-text-fill-color: white !important;
   transition: background-color 5000s ease-in-out 0s;
 }
+
 input:-webkit-autofill,
 textarea:-webkit-autofill {
   background-color: transparent;
@@ -167,6 +172,7 @@ textarea:-webkit-autofill::first-line {
     width: 390px;
   }
 }
+
 .input-span {
   padding-top: 8pxpx;
   font-size: 10px;
@@ -285,11 +291,13 @@ textarea:-webkit-autofill::first-line {
     width: 300px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .modal-window {
     width: 493px;
   }
 }
+
 .modal-btn {
   position: absolute;
   top: 15px;
@@ -308,6 +316,7 @@ textarea:-webkit-autofill::first-line {
 .modal-btn:active .modal-btn-icon {
   transform: scale(1.2);
 }
+
 .modal-btn-icon {
   stroke: #fafafa;
   transition: transform 250ms linear;
@@ -322,6 +331,7 @@ textarea:-webkit-autofill::first-line {
     padding: 64px;
   }
 }
+
 .modal-title {
   font-size: 20px;
   font-weight: 600;
@@ -330,17 +340,20 @@ textarea:-webkit-autofill::first-line {
   color: #fafafa;
   margin-bottom: 16px;
 }
+
 @media screen and (max-width: 374px) {
   .modal-title {
     font-size: 18px;
     line-height: 1.2;
   }
 }
+
 @media screen and (min-width: 768px) {
   .modal-title {
     letter-spacing: -0.02em;
   }
 }
+
 .modal-text {
   font-size: 16px;
   line-height: 1.5;
@@ -368,6 +381,7 @@ textarea:-webkit-autofill::first-line {
     line-height: 1.5;
   }
 }
+
 .on-scroll {
   overflow: hidden;
 }
