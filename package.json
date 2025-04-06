@@ -19,6 +19,7 @@
   "dependencies": {
     "accordion-js": "^3.4.0",
     "axios": "^1.8.4",
+    "basiclightbox": "^5.0.4",
     "izitoast": "^1.4.0",
     "modern-normalize": "^3.0.1",
     "slider": "^1.0.4",
