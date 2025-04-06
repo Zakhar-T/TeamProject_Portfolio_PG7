@@ -1,10 +1,6 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@import 'modern-normalize/modern-normalize.css';
+/* @import 'node_modules/modern-normalize/modern-normalize.css'; */
 
-body,
 h1,
 h2,
 h3,
@@ -15,9 +11,9 @@ p {
   margin: 0;
 }
 
-p:last-child {
+/* p:last-child {
   margin-bottom: 0;
-}
+} */
 
 ul {
   margin: 0;
@@ -33,7 +29,6 @@ a {
 button,
 input,
 textarea {
-  font-family: inherit;
   color: currentColor;
 }
 

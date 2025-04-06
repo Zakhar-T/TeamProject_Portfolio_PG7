@@ -1,36 +1,65 @@
-<header class="header">
+<header class="header" id="header">
     <div class="container">
-        <nav class="nav">
-            <a class="nav-logo" href="./index.html" aria-label="site logo">
-                <img class="logo-img" src="/img/logo.jpg" alt="Site logo" width="80" height="80">jefferson*</a>
-            <button class="header-openmenu hdr-btn" id="menu"><span class="menu-label"
-                    aria-label="open menu">Menu</span>
-                <svg class="header-burger hdr-icon" width="28" height="28">
-                    <use href="./img/sprite.svg#burger"></use>
+        <div class="mobile-menu">
+            <button class="header-closemenu hdr-btn" id="hdr-closemenu" aria-label="close menu">
+                <svg class="hdr-icon" data-X width="28" height="28">
+                    <use href="./img/sprite.svg#cross"></use>
                 </svg>
             </button>
-            <div class="menu">
-                <button class="header-closemenu hdr-btn">
-                    <svg class="hdr-icon" width="28" height="28">
-                        <use href="./img/sprite.svg#cross"></use>
+            <ul class="nav-list">
+                <li>
+                    <a class="nav-link" href="#about-me" aria-label="go to about me section">About&nbsp;me</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#benefits" aria-label="go to benefits section">Benefits</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#projects" aria-label="go to projects section">Projects</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#faq" aria-label="go to faq section">FAQ</a>
+                </li>
+            </ul>
+            <a class="mobile-orderbtn orderbtn" href="#work-together"
+                aria-label="Go to order form">Order&nbsp;the&nbsp;project</a>
+        </div>
+
+        <nav class="hdr-nav">
+            <a class="hdr-nav-logo" href="./index.html" aria-label="site logo">
+                <img class="hdr-logo-img" src="img/header/logo.webp" alt="Site logo" width="80" height="80">
+                <div class="no-nyan">jefferson*</div>
+                <div class="nyan">
+                    <span>j</span><span>e</span><span>f</span><span>f</span><span>e</span><span>r</span><span>s</span><span>o</span><span>n</span><span>*</span>
+                    <audio id="nyanAudio">
+                        <source src="/img/header/nyancat.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </a>
+
+            <div class="hdr-menu-anchor">
+                <button class="hdr-btn" id="hdr-openmenu" aria-label="open menu">
+                    <span class="hdr-menu-label">Menu</span>
+                    <svg class="hdr-burger hdr-icon" width="28" height="28">
+                        <use href="./img/sprite.svg#burger"></use>
                     </svg>
                 </button>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link {=$highlight-curr}" href="#about-me">About&nbsp;me</a>
+                <ul class="hdr-menu nav-list">
+                    <li>
+                        <a class="nav-link" href="#about-me" aria-label="go to about me section">About&nbsp;me</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link {=$highlight-curr}" href="#benefits">Benefits</a>
+                    <li>
+                        <a class="nav-link" href="#benefits" aria-label="go to benefits section">Benefits</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link {=$highlight-curr}" href="#projects">Projects</a>
+                    <li>
+                        <a class="nav-link" href="#projects" aria-label="go to projects section">Projects</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link {=$highlight-curr}" href="#faq">FAQ</a>
+                    <li>
+                        <a class="nav-link" href="#faq" aria-label="go to faq section">FAQ</a>
                     </li>
                 </ul>
-                <a class="nav-orderbtn" href="#work-together" aria-label="Go to order form">Order the project</a>
             </div>
+            <a class="nav-orderbtn orderbtn" href="#work-together"
+                aria-label="Go to order form">Order&nbsp;the&nbsp;project</a>
         </nav>
     </div>
 </header>
