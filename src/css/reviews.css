@@ -6,6 +6,7 @@
   padding: 32px 24px;
   border-radius: 20px;
   border: solid 1px #fafafa33;
+  min-height: 302px;
 }
 
 .reviews-img {
