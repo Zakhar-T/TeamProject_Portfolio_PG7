@@ -37,7 +37,7 @@ function submitForm(evt) {
         </div>`);
             instance.show();
             const modal = document.getElementById('modalW');
-            const modal1 = modal.parentNode;
+            const modalContainer = modal.parentNode;
             body.classList.add('mobMenuOpen');
 
             body.classList.add('on-scroll');
@@ -46,7 +46,7 @@ function submitForm(evt) {
             function escClose(evt) {
                 if (evt.keyCode === 27) {
                     instance.close();
-                    if (modal1.classList.contains('basicLightbox__placeholder')) {
+                    if (modalContainer.classList.contains('basicLightbox__placeholder')) {
                         body.classList.remove('mobMenuOpen');
                         body.removeEventListener('keydown', escClose);
                         body.classList.toggle('on-scroll');
@@ -56,19 +56,16 @@ function submitForm(evt) {
             body.addEventListener('click', evt => {
                 if (evt.target === modal) {
                     instance.close();
-                    if (modal1.classList.contains('basicLightbox__placeholder')) {
+                    if (modalContainer.classList.contains('basicLightbox__placeholder')) {
                         body.classList.remove('mobMenuOpen');
-
                         body.classList.toggle('on-scroll');
-
                     }
                 }
             });
             instance.element().querySelector('.modal-btn').onclick = () => {
                 instance.close();
-                if (modal1.classList.contains('basicLightbox__placeholder')) {
+                if (modalContainer.classList.contains('basicLightbox__placeholder')) {
                     body.classList.remove('mobMenuOpen');
-
                     body.classList.toggle('on-scroll');
                 }
             };
@@ -86,8 +83,6 @@ function submitForm(evt) {
             errorMessage.style.border = '1px solid #ed3b44';
             errorMessage.style.borderRadius = '15px';
             errorMessage.style.padding = '32px';
-            reviewsList.innerHTML = '';
-            reviewsList.appendChild(errorMessage);
         });
 }
 
