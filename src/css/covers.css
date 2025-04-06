@@ -1,39 +1,52 @@
 .covers {
     position: relative;
-    height: 960px;
+    height: 100vh;
     padding: 0;
 }
 
 .covers-wrapper {
     position: absolute;
     overflow: hidden;
+    width: 100vw;
     height: 100%;
-    right: -800px;
+    right: -500px;
     left: 0;
 }
 
 .covers-set {
     display: flex;
-    /* transform: rotate(17deg); */
+    transform: rotate(17deg);
     align-items: center;
     justify-content: center;
     gap: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 52px;
+    height: 163px;
+}
+
+@media only screen and (min-width: 768px) {
+  .covers-set {
     height: 314px;
+  }
 }
 
 .covers-set picture {
     display: block;
-    max-height: 314px;
+    height: 100%;
+    min-width: 282px;
     align-items: center;
     justify-content: center;
 }
 
+@media only screen and (min-width: 768px) {
+    .covers-set picture {
+        min-width: 544px;
+    }
+}
+
 .covers-set-img {
-    display: block;
     flex-shrink: 0;
-    max-height: 314px;
-    width: 544px;
+    height: 100%;
+    width: 100%;
     /* white-space: nowrap;
     animation-name: marqueeLine;
     animation-duration: 5s;
