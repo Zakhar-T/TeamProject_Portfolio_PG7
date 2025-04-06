@@ -1,24 +1,49 @@
 .hero {
-    background-color: 1C1D20;
-    background-image: linear-gradient(
-        to right,
-        #2B4441,
-        #1E3633,
-        #1C1D20),
-        url(/src/img/Glass\ effect\ 1.png);
     width: 1440px;
-    height: 900px;
-background-repeat: no-repeat;
-block-size: cover;
+       margin: 0 auto;
+    background-image:
+            url(../img/Glass\ effect\ 1.png),
+            linear-gradient(to right, #2B4441 0%, #1E3633 34%, #1C1D20 50%, #1C1D20 100%);
+        backdrop-filter: blur(4px);
+        padding: 300px 178px 330px;
+        background-repeat: no-repeat;
+        background-size: 728px 900px, 1440px 900px;
 }
-h1 {
-width: 1084px;
-height: 270px;
-margin: 300px 178px 330px;
-color: #fafafa;
-font-weight: 500;
+.hero-container {
+    margin: 0 auto;
+width: 1440px;
+padding: 0;
+width: 100%;
+
+
+}
+.hero-title {
+    width: 1084px;
+    height: 270px;
+    color: #fafafa;
+    font-weight: 500;
     font-size: 90px;
     line-height: 100%;
     letter-spacing: -0.03em;
     text-transform: uppercase;
 }
+.soc-list{
+    display: flex;
+    flex-direction: row;
+    width: 473px;
+    height: 55px;
+    gap: 8px;
+}
+.soc-item{
+    width: 55px;
+    height: 55px;
+}
+.email-item{
+    width: 223px;
+    height: 55px;
+}
+/* font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+letter-spacing: -0.02em;
+color: var(--main-text); */
