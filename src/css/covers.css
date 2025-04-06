@@ -2,6 +2,16 @@
     position: relative;
     height: 100vh;
     padding: 0;
+    background-color: rgba(217, 217, 217, 0.04);
+    background-image: url(../img/covers/elements_vectors@1x.png);
+    background-size: cover;
+}
+
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .covers {
+        background-image: url(../img/covers/elements_vectors@2x.png);
+    }
 }
 
 .covers-wrapper {
@@ -11,6 +21,8 @@
     height: 100%;
     right: -500px;
     left: 0;
+    background-image: "../img/covers/elements_vectors@1x.png";
+    background-size: cover;
 }
 
 .covers-set {
