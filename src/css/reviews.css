@@ -1,6 +1,7 @@
 .reviews-list {
   margin-bottom: 32px;
 }
+
 .reviews-item {
   padding: 32px 24px;
   border-radius: 20px;
@@ -21,38 +22,38 @@
   color: #fafafa;
   margin-bottom: 8px;
   line-height: 30px;
-  letter-spacing: -2%;
 }
+
 .reviews-text-content {
   font-size: 16px;
   font-weight: 500;
   color: #fafafa99;
   line-height: 24px;
-  letter-spacing: -2%;
 }
+
 .reviews-button-box {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
+
 .reviews-button {
   border-radius: 60px;
   border: solid 1px #fafafa80;
   padding: 18px;
   background-color: transparent;
-  transition: all 0.3s ease-in-out;
-  }
-
-  .reviews-button:hover {
-  background-color: #fafafa33;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
+
+.reviews-button:hover {
+  background-color: #fafafa33;
+}
+
 .reviews-button:active {
   background-color: #fafafa66;
-  transition: all 0.3s ease-in-out;
 }
-.icon {
+
+.reviews-icon {
   stroke: white;
   fill: none;
 }
