@@ -1,10 +1,16 @@
 .covers {
     position: relative;
-    height: 100vh;
+    height: 508px;
     padding: 0;
     background-color: rgba(217, 217, 217, 0.04);
     background-image: url(../img/covers/elements_vectors@1x.png);
     background-size: cover;
+}
+
+@media only screen and (min-width: 768px) {
+    .covers {
+        height: 960px;
+    }
 }
 
 @media (min-resolution: 192dpi),
@@ -36,9 +42,9 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .covers-set {
-    height: 314px;
-  }
+    .covers-set {
+      height: 314px;
+    }
 }
 
 .covers-set picture {
