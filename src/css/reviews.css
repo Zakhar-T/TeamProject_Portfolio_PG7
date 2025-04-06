@@ -76,6 +76,11 @@
   border-color: #fafafa33;
 }
 
-.reviews-button:disabled .icon {
+.reviews-button:disabled .reviews-icon {
   stroke: #3b3b3b;
+}
+
+.reviews-button:hover:disabled, .reviews-button:active:disabled{
+  background-color: transparent;
+  cursor: not-allowed;
 }
