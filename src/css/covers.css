@@ -1,0 +1,52 @@
+.covers {
+    position: relative;
+    height: 960px;
+    padding: 0;
+}
+
+.covers-wrapper {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    right: -800px;
+    left: 0;
+}
+
+.covers-set {
+    display: flex;
+    /* transform: rotate(17deg); */
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 32px;
+    height: 314px;
+}
+
+.covers-set picture {
+    display: block;
+    max-height: 314px;
+    align-items: center;
+    justify-content: center;
+}
+
+.covers-set-img {
+    display: block;
+    flex-shrink: 0;
+    max-height: 314px;
+    width: 544px;
+    /* white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; */
+}
+
+/* @keyframes marqueeLine {
+    from {
+        transform: translateX(-20%);
+    }
+
+    to {
+        transform: translateX(-180%);
+    }
+} */
