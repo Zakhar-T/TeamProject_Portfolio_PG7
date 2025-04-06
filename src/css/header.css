@@ -99,7 +99,7 @@
         align-items: center;
         padding: 32px 16px 64px;
 
-        background-image: url(../img/header/header_bg.jpg), linear-gradient(to right, #C6E327 0%, #596808 34%, #1C1D20 50%, #1C1D20 100%);
+        background-image: url(../img/header/header_bg.webp), linear-gradient(to right, #C6E327 0%, #596808 34%, #1C1D20 50%, #1C1D20 100%);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -144,7 +144,7 @@
     @media only screen and (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .mobile-menu {
-            background-image: url(../img/header/header_bg@2x.jpg), linear-gradient(to right, #C6E327 0%, #596808 34%, #1C1D20 50%, #1C1D20 100%);
+            background-image: url(../img/header/header_bg@2x.webp), linear-gradient(to right, #C6E327 0%, #596808 34%, #1C1D20 50%, #1C1D20 100%);
 
         }
     }
