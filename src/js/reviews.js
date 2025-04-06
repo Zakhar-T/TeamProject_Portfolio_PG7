@@ -2,6 +2,9 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import { Navigation } from 'swiper/modules';
 import axios from 'axios';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 async function getData() {
   try {
@@ -15,8 +18,18 @@ async function getData() {
 }
 
 async function generateReviews() {
-  const rewiewers_list = await getData();
+  const rewiewers_list = getData();
   const rewiews = document.querySelector('.reviews-list');
+  if (rewiewers_list.length === 0) {
+    const errorReviewText = document.createElement('p');
+    errorReviewText.classList.add('review-error-massage');
+    errorReviewText.textContent = 'Reviews is Not Found';
+    rewiews.appendChild(errorReviewText);
+    const rect = errorReviewText.getBoundingClientRect();
+    console.log(rect);
+    return;
+  }
+
   const fragment = document.createDocumentFragment();
 
   rewiewers_list.forEach(({ author, avatar_url, review }) => {
@@ -70,7 +83,6 @@ async function generateReviews() {
         rev_btn_prev.disabled = false;
       },
     },
-    
   });
   const reviews_card = document.querySelectorAll('.reviews-item');
 
@@ -102,4 +114,30 @@ async function generateReviews() {
 
 generateReviews();
 
+function handleScroll() {
+  const errorReviewText = document.querySelector('.review-error-massage');
+  if (!errorReviewText) return;
 
+  const rect = errorReviewText.getBoundingClientRect();
+
+  if (rect.top < window.innerHeight && rect.bottom > 0) {
+    iziToast.error({
+      title: 'Oops!',
+      message: 'No reviews found for this section.',
+      timeout: 5000,
+      backgroundColor: '#2c2f33', 
+      titleColor: '#FF6B6B', 
+      messageColor: '#FFFFFF', 
+      icon: 'fas fa-exclamation-circle', 
+      iconColor: '#FF6B6B',
+      position: 'topRight', 
+      progressBarColor: '#FF6B6B', 
+      transitionIn: 'fadeInDown', 
+      transitionOut: 'fadeOutUp',
+    });
+
+    window.removeEventListener('scroll', handleScroll);
+  }
+}
+
+window.addEventListener('scroll', handleScroll);

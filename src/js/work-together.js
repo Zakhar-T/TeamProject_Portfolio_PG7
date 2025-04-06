@@ -1,4 +1,5 @@
 import axios from 'axios';
+import * as basicLightbox from 'basiclightbox';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 

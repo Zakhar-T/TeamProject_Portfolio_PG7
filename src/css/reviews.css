@@ -82,5 +82,17 @@
 
 .reviews-button:hover:disabled, .reviews-button:active:disabled{
   background-color: transparent;
-  cursor: not-allowed;
+  cursor: unset;
+}
+
+.review-error-massage{
+  font-size: 20px;
+  font-weight: 600;
+  border: solid 1px #fafafa80;
+  color: #fafafa;
+  margin-bottom: 32px;
+  line-height: 30px;
+  padding: 18px;
+  border-radius: 60px;
+  margin: 0 auto;
 }
