@@ -42,9 +42,9 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .covers-set {
-    height: 314px;
-  }
+    .covers-set {
+      height: 314px;
+    }
 }
 
 .covers-set picture {
