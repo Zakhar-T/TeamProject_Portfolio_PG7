@@ -1,5 +1,5 @@
 import logoJpg from '/img/header/logo.jpg';
-import uniPng from '/img/header/uni.png';
+import uniPng from '/img/header/uni.webp';
 const menuBtnOpn = document.getElementById('hdr-openmenu');
 menuBtnOpn.addEventListener('click', onMenuOpenClick);
 
