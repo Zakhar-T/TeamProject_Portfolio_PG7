@@ -1,10 +1,12 @@
 .reviews-list {
   margin-bottom: 32px;
 }
+
 .reviews-item {
   padding: 32px 24px;
   border-radius: 20px;
   border: solid 1px #fafafa33;
+  min-height: 302px;
 }
 
 .reviews-img {
@@ -21,38 +23,47 @@
   color: #fafafa;
   margin-bottom: 8px;
   line-height: 30px;
-  letter-spacing: -2%;
 }
+
 .reviews-text-content {
   font-size: 16px;
   font-weight: 500;
   color: #fafafa99;
   line-height: 24px;
-  letter-spacing: -2%;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
+.reviews-item:hover .reviews-text-content {
+  display: block;
+}
+
 .reviews-button-box {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
+
 .reviews-button {
   border-radius: 60px;
   border: solid 1px #fafafa80;
   padding: 18px;
   background-color: transparent;
-  transition: all 0.3s ease-in-out;
-  }
-
-  .reviews-button:hover {
-  background-color: #fafafa33;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
+
+.reviews-button:hover {
+  background-color: #fafafa33;
+}
+
 .reviews-button:active {
   background-color: #fafafa66;
-  transition: all 0.3s ease-in-out;
 }
-.icon {
+
+.reviews-icon {
   stroke: white;
   fill: none;
 }
@@ -63,8 +74,21 @@
 
 .reviews-button:disabled {
   border-color: #fafafa33;
+  cursor: not-allowed;
 }
 
-.reviews-button:disabled .icon {
+.reviews-button:disabled .reviews-icon {
   stroke: #3b3b3b;
+}
+
+.reviews-button:hover:disabled {
+  background-color: transparent;
+}
+
+.reviews-button:active:disabled {
+  background-color: transparent;
+}
+
+.card-open {
+  transition: max-height 1s ease-in-out;
 }
