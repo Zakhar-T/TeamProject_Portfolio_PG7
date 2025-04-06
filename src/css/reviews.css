@@ -6,7 +6,6 @@
   padding: 32px 24px;
   border-radius: 20px;
   border: solid 1px #fafafa33;
-  min-height: 302px;
 }
 
 .reviews-img {
@@ -74,21 +73,8 @@
 
 .reviews-button:disabled {
   border-color: #fafafa33;
-  cursor: not-allowed;
 }
 
-.reviews-button:disabled .reviews-icon {
+.reviews-button:disabled .icon {
   stroke: #3b3b3b;
-}
-
-.reviews-button:hover:disabled {
-  background-color: transparent;
-}
-
-.reviews-button:active:disabled {
-  background-color: transparent;
-}
-
-.card-open {
-  transition: max-height 1s ease-in-out;
 }
