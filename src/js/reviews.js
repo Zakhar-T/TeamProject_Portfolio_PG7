@@ -18,15 +18,13 @@ async function getData() {
 }
 
 async function generateReviews() {
-  const rewiewers_list = getData();
+  const rewiewers_list = await getData();
   const rewiews = document.querySelector('.reviews-list');
   if (rewiewers_list.length === 0) {
     const errorReviewText = document.createElement('p');
     errorReviewText.classList.add('review-error-massage');
     errorReviewText.textContent = 'Reviews is Not Found';
     rewiews.appendChild(errorReviewText);
-    const rect = errorReviewText.getBoundingClientRect();
-    console.log(rect);
     return;
   }
 
