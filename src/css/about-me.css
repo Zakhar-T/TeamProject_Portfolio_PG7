@@ -1,111 +1,86 @@
-.about-me {
-  background-color: #1a1a1a; 
-  color: #fff; 
-  border-radius: 20px;
-}
-
-.about-me__container {
-  gap: 16px;
-}
-
-.text-section {
-  flex: 1;
-  max-width: 680px; /* Set maximum width */
-  height: 700px; /* Set height */
-}
-
 .about-me__box{
   display: flex;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
+  gap: 16px;
 }
 
 @media screen and (min-width: 1440px) {
   .about-me__box{
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+    flex-direction: row;
+  }
 }
-}
-.text-section .about-me__intro {
-  width: 100%;
-  display: flex;
-  justify-content: center; 
-  text-align: center;
+
+.about-me-text-section {
   background-color: #242527;
   border-radius: 24px;
-  box-sizing: border-box;
-  height: 700px; /* Set height */
+  padding: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-me-text-section {
+    padding: 64px;
+  }
 }
 
 .iworkwith {
-  max-width: 552px; /* Set maximum width */
-  margin-top: 64px;
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
-  font-size: 38px; /* Adjust font size */
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  margin-bottom: 240px;
 }
 
-.text-section .highlight {
-  color: #e74c3c; /* Red color for highlighted text */
+@media only screen and (min-width: 768px) {
+  .iworkwith {
+    font-size: 38px;
+    line-height: 1.05;
+    margin-bottom: 372px;
+  }
 }
 
-.text-section .gray {
-  color: #FAFAFA66; /* Gray color for the word "websites" */
+.about-me-text-section .highlight {
+  color: #e74c3c;
 }
 
-.image-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-section picture {
-  max-width: 100%;
-  border-radius: 24px;
-}
-
-.image-section img {
-  width: 100%;
-  height: auto;
-  border-radius: 24px;
-  object-fit: cover;
+.about-me-text-section .gray {
+  color: #FAFAFA66;
 }
 
 @media (max-width: 768px) {
   .about-me__container {
     flex-direction: column;
-    align-items: center;
-  }
-
-  .text-section,
-  .image-section {
-    width: 100%;
-  }
-
-  .iworkwith {
-    font-size: 28px;
-    max-width: 100%;
   }
 }
 
 .about-me__image {
   display: block;
-  max-width: 100%;
   border-radius: 24px;
-  overflow: hidden;
+  height: 500px;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-me__image {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .about-me__image {
+    height: 700px;
+    width: 680px;
+    flex-shrink: 0;
+  }
 }
 
 .about-me__image img {
-  width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
   border-radius: 24px;
+  object-fit: cover;
+  overflow: hidden;
 }
-
 
 /* Accordion Styles */
 .accordion {
