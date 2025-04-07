@@ -1,18 +1,10 @@
-/* General Styles */
 .about-me {
-  padding: 64px;
-  background-color: #1a1a1a; /* Dark background color */
-  color: #fff; /* White text color */
+  background-color: #1a1a1a; 
+  color: #fff; 
   border-radius: 20px;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
 }
 
 .about-me__container {
-  display: flex;
-  align-items: center; /* Center items vertically */
   gap: 16px;
 }
 
@@ -22,6 +14,19 @@
   height: 700px; /* Set height */
 }
 
+.about-me__box{
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+}
+
+@media screen and (min-width: 1440px) {
+  .about-me__box{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+}
 .text-section .about-me__intro {
   width: 100%;
   display: flex;
@@ -194,41 +199,31 @@
   .accordion-content {
     padding: 0 20px 20px;
     font-size: 15px;
-    max-width: 100%; /* Ensure it fits smaller screens */
+    max-width: 100%; 
   }
 }
 
-/* SwiperJS Skills Slider */
-/* SwiperJS Skills Slider */
 .skills-slider {
-  width: 100%;
   padding: 20px;
-  background-color: #1a1a1a;
   border-radius: 10px;
   margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  position: relative;
 }
 
-.skills-slider .swiper-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
 
 .skills-slider .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #333;
-  width: 200px;
+  width: 200px !important;
   height: 200px;
   border-radius: 50%;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
-  margin: 0 10px;
   transition: background-color 0.3s;
+  flex: 0 0 auto;
+  width: auto;
 }
 
 .skills-slider .swiper-slide span {
@@ -240,28 +235,31 @@
   background-color: #e74c3c;
 }
 
-.skills-slider .swiper-button-next,
-.skills-slider .swiper-button-prev {
+.skills-slider .aboutMe-swiper-button-next,
+.skills-slider .aboutMe-swiper-button-prev {
   width: 50px;
   height: 50px;
   color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   padding: 10px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-.skills-slider .swiper-button-next {
-  right: -25px;
-}
-
-.skills-slider .swiper-button-prev {
-  left: -25px;
-}
-
-.skills-slider .swiper-button-next:hover,
-.skills-slider .swiper-button-prev:hover {
+.skills-slider .aboutMe-swiper-button-next:hover,
+.skills-slider .aboutMe-swiper-button-prev:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.aboutMe-swiper{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px !important;
+  overflow: hidden;
+  
+}
+skills-slider-wrapper{
+
 }
