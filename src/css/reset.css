@@ -1,3 +1,6 @@
+@import 'modern-normalize/modern-normalize.css';
+/* @import 'node_modules/modern-normalize/modern-normalize.css'; */
+
 h1,
 h2,
 h3,
@@ -8,9 +11,9 @@ p {
   margin: 0;
 }
 
-p:last-child {
+/* p:last-child {
   margin-bottom: 0;
-}
+} */
 
 ul {
   margin: 0;
@@ -19,10 +22,18 @@ ul {
 }
 
 a {
+  color: currentColor;
   text-decoration: none;
 }
 
+button,
+input,
+textarea {
+  color: currentColor;
+}
+
 button {
+  padding: 0;
   cursor: pointer;
 }
 

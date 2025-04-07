@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "vite build --base=/TeamProject_Portfolio_PG7/",
     "preview": "vite preview"
   },
@@ -17,9 +17,14 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
     "accordion-js": "^3.4.0",
     "axios": "^1.8.4",
+    "basiclightbox": "^5.0.4",
     "izitoast": "^1.4.0",
+    "modern-normalize": "^3.0.1",
+    "slider": "^1.0.4",
+    "swiper": "^11.2.6",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
