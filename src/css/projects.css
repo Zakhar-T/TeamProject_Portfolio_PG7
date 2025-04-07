@@ -73,8 +73,12 @@
 .proj-link {
     display: inline-block;
     background-color: #ed3b44;
+    
     border-radius: 60px;
     padding: 13px 32px;
+    width: 141px;
+    height: 45px;
+
     /* font-size: 16px; */
     /* letter-spacing: -0.02em; */
     color: #fafafa;
@@ -180,6 +184,8 @@
 
     .proj-link {
         padding: 18px 50px;
+        width: 177px;
+        height: 55px;
     }
 
     .proj-img {
