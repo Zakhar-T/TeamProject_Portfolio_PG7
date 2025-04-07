@@ -9,7 +9,9 @@ const [proj_btn_prev, proj_btn_next] =
 const swiper = new Swiper('.proj-swiper', {
   direction: 'horizontal',
   simulateTouch: true,
+  speed: 1200,
   slidesPerView: 1,
+  spaceBetween: 20,
   modules: [Navigation],
   navigation: {
     nextEl: proj_btn_next,
