@@ -1,0 +1,267 @@
+/* General Styles */
+.about-me {
+  padding: 64px;
+  background-color: #1a1a1a; /* Dark background color */
+  color: #fff; /* White text color */
+  border-radius: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-me__container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  gap: 16px;
+}
+
+.text-section {
+  flex: 1;
+  max-width: 680px; /* Set maximum width */
+  height: 700px; /* Set height */
+}
+
+.text-section .about-me__intro {
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  text-align: center;
+  background-color: #242527;
+  border-radius: 24px;
+  box-sizing: border-box;
+  height: 700px; /* Set height */
+}
+
+.iworkwith {
+  max-width: 552px; /* Set maximum width */
+  margin-top: 64px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 38px; /* Adjust font size */
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.text-section .highlight {
+  color: #e74c3c; /* Red color for highlighted text */
+}
+
+.text-section .gray {
+  color: #FAFAFA66; /* Gray color for the word "websites" */
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section picture {
+  max-width: 100%;
+  border-radius: 24px;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .about-me__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-section,
+  .image-section {
+    width: 100%;
+  }
+
+  .iworkwith {
+    font-size: 28px;
+    max-width: 100%;
+  }
+}
+
+.about-me__image {
+  display: block;
+  max-width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.about-me__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 24px;
+}
+
+
+/* Accordion Styles */
+.accordion {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.accordion-item {
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333;
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px 24px 16px; 
+  cursor: pointer;
+}
+
+.accordion-header h3 {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.accordion-toggle {
+  width: 24px;
+  height: 24px;
+  background: url('../img/accordion-icon.svg') no-repeat center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate icon if open */
+.accordion-item.open .accordion-toggle {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  display: none;
+  padding: 0 24px 24px 0;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  color: #f4f4f4;
+  line-height: 1.6;
+  max-width: 612px;
+  margin-left: auto;
+}
+
+
+.accordion-content p {
+  margin-bottom: 10px;
+  margin-right: 0;
+}
+
+.accordion-content p:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-item:first-child .accordion-content p {
+  margin-bottom: 32px;
+}
+
+
+.accordion-item:first-child .accordion-content p:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-item.open .accordion-content {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .accordion {
+    max-width: 100%;
+  }
+
+  .accordion-header {
+    padding: 20px;
+  }
+
+  .accordion-content {
+    padding: 0 20px 20px;
+    font-size: 15px;
+    max-width: 100%; /* Ensure it fits smaller screens */
+  }
+}
+
+/* SwiperJS Skills Slider */
+/* SwiperJS Skills Slider */
+.skills-slider {
+  width: 100%;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.skills-slider .swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-slider .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+.skills-slider .swiper-slide span {
+  display: block;
+  text-align: center;
+}
+
+.skills-slider .swiper-slide.active {
+  background-color: #e74c3c;
+}
+
+.skills-slider .swiper-button-next,
+.skills-slider .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.skills-slider .swiper-button-next {
+  right: -25px;
+}
+
+.skills-slider .swiper-button-prev {
+  left: -25px;
+}
+
+.skills-slider .swiper-button-next:hover,
+.skills-slider .swiper-button-prev:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
