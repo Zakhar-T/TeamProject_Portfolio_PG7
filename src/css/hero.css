@@ -1,43 +1,87 @@
 .hero {
-    width: 1440px;
+    max-width: 1440px;
     height: 900px;
-       margin: 0 auto;
+    margin: 0 auto;
     background-image:
             url(../img/Glass\ effect\ 1.png),
             linear-gradient(to right, #2B4441 0%, #1E3633 34%, #1C1D20 50%, #1C1D20 100%);
         backdrop-filter: blur(4px);
-       
         background-repeat: no-repeat;
         background-size: 728px 900px, 1440px 900px;
 }
-.hero-container {
-padding: 300px 0 330px;
-}
+/* З 375px – адаптивна верстка */
+@media (min-width: 375px) {
 
+}
+@media only screen and (min-widtH: 768px){
+
+}
+@media only screen and (min-widtH: 1440px){
+.hero{max-width: 1440px;
+}}
+.hero-container {
+
+}
+@media (min-width: 375px) {}
+.hero-container{padding: 281px 16px;}
+
+@media only screen and (min-widtH: 768px) {}
+.hero-container {
+    padding: 300px 0 274px;}
+@media only screen and (min-widtH: 1440px) {
+.hero-container {
+        padding: 300px 0 330px;
+    }
+}
 .hero-title {
-    width: 1084px;
-    height: 270px;
+    max-width: 343px;
+        height: 250px;
+    
     color: #fafafa;
     font-weight: 500;
-    font-size: 90px;
+    font-size: 50px;
     line-height: 100%;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     margin: 0 auto;
-    
+}
+@media (min-width: 375px) {}
+
+@media only screen and (min-widtH: 768px) {
+    .hero-title {
+            max-width: 632px;
+            height: 450px;
+            font-size: 90px;
+}}
+
+@media only screen and (min-widtH: 1440px) {
+    .hero-title {
+        max-width: 1084px;
+            height: 270px;
+    }
 }
 .soc-list {
     display: flex;
     flex-direction: row;
-    width: 473px;
-    height: 55px;
+    padding: 212px 17px 32px 0;
+    width: 342px;
+        height: 37px;
     gap: 8px;
     margin: auto 32px 32px auto;
-    padding: 243px 32px 32px 0;
     
-    
-}
-.soc-item{
+    }
+        @media only screen and (min-widtH: 768px) {
+        .soc-list{
+            width: 473px;
+                height: 55px;
+                padding: 187px 32px 32px 0;
+        }
+        }
+                @media only screen and (min-widtH: 1440px) {
+                .soc-list {
+padding: 243px 32px 32px 0;
+                }}
+.soc-item {
     width: 55px;
     height: 55px;
     background-color: transparent;
@@ -46,7 +90,6 @@ padding: 300px 0 330px;
         display: flex;
             justify-content: center;
             align-items: center;
-        
 }
 .soc-item:hover,
 .soc-item:focus {
