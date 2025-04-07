@@ -1,21 +1,24 @@
 import Swiper from 'swiper';
 import 'swiper/css';
-import { Navigation } from 'swiper/modules';
+import { Keyboard, Navigation } from 'swiper/modules';
 
-// const proj_btn_next = document.querySelector('.proj-button-right');
-// const proj_btn_prev = document.querySelector('.proj-button-left');
-const [proj_btn_prev, proj_btn_next] =
-  document.querySelectorAll('.proj-button');
+const proj_btn_next = document.querySelector('.proj-button-right');
+const proj_btn_prev = document.querySelector('.proj-button-left');
 const swiper = new Swiper('.proj-swiper', {
   direction: 'horizontal',
   simulateTouch: true,
   speed: 1200,
   slidesPerView: 1,
   spaceBetween: 20,
-  modules: [Navigation],
+  modules: [Keyboard, Navigation],
   navigation: {
     nextEl: proj_btn_next,
     prevEl: proj_btn_prev,
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: false,
   },
   on: {
     reachEnd: () => {
