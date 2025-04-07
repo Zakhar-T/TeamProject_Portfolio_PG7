@@ -1,0 +1,74 @@
+.hero {
+    width: 1440px;
+    height: 900px;
+       margin: 0 auto;
+    background-image:
+            url(../img/Glass\ effect\ 1.png),
+            linear-gradient(to right, #2B4441 0%, #1E3633 34%, #1C1D20 50%, #1C1D20 100%);
+        backdrop-filter: blur(4px);
+       
+        background-repeat: no-repeat;
+        background-size: 728px 900px, 1440px 900px;
+}
+.hero-container {
+padding: 300px 0 330px;
+}
+
+.hero-title {
+    width: 1084px;
+    height: 270px;
+    color: #fafafa;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin: 0 auto;
+    
+}
+.soc-list {
+    display: flex;
+    flex-direction: row;
+    width: 473px;
+    height: 55px;
+    gap: 8px;
+    margin: auto 32px 32px auto;
+    padding: 243px 32px 32px 0;
+    
+    
+}
+.soc-item{
+    width: 55px;
+    height: 55px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+        display: flex;
+            justify-content: center;
+            align-items: center;
+        
+}
+.soc-item:hover,
+.soc-item:focus {
+    background-color: #2b4441;}
+.social-link{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        height: 19px;
+}
+.email-item{
+    width: 223px;
+    height: 55px;
+    background-color: transparent;
+        border-radius: 60px;
+        border: 1px solid rgba(250, 250, 250, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.email-item:hover,
+.email-item:focus {
+    background-color: #2b4441;
+}
