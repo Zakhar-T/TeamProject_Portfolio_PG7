@@ -11,5 +11,8 @@
         <symbol id="burger" viewBox="0 0 28 28">
             <path d="M3.5 9.91666H24.5M3.5 18.0833H24.5" stroke-width="2" stroke-linecap="round"/>
         </symbol>
+        <symbol id="up-arrow" viewBox="0 0 12 8">
+            <path d="M11 6.5L6 1.5L1 6.5" stroke-width="2" />
+        </symbol>
     </defs>
 </svg>
