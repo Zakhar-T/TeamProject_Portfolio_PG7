@@ -12,7 +12,9 @@
 @media only screen and (min-widtH: 768px) {
     .hero {
         max-width: 768px;
-        background-position: 150%;
+        background-position: 400%;
+        padding-top: 0;
+        padding-bottom: 32px;
     /* background-size:728px 1024px, 768px 1024px; */
     }
 }
@@ -24,9 +26,8 @@
 }
 }
 @media only screen and (min-widtH: 768px){
-
 .hero-container{
-padding: 300px 0;
+
 }
 }
 @media only screen and (min-width: 1440px){
@@ -42,16 +43,28 @@ padding: 300px 0 330px;
         text-transform: uppercase;
         color: var(--main-text);
     margin: 0 auto;
-    padding: 281px 0 0 0;
+    padding: 281px 0 0;
+}
+@media only screen and (min-widtH: 768px){
+    .hero-title{
+        font-size: 90px;
+        padding: 300px 0 0;
+    }
 }
 .soc-list {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
     gap: 8px;
     /* margin: auto 32px 32px auto; */
     padding: 212px 0 0;
 }
+@media only screen and (min-widtH: 768px){
+    .soc-list{
+        padding: 187px 0 0;
+        /* align-items: flex-end; */
+        justify-content: flex-end;
+}}
 .soc-item{
     width: 37px;
     height: 37px;
@@ -64,7 +77,8 @@ padding: 300px 0 330px;
         }
 @media only screen and (min-width: 768px){
 .soc-item{
-
+width: 55px;
+height: 55px;
 }
 }
                                
@@ -78,6 +92,11 @@ padding: 300px 0 330px;
         border-radius: 50%;
         font-size: 14px;
 }
+@media only screen and (min-width: 768px){
+    .social-link{
+        font-size: 16px;
+    }
+}
 .email-item{
     width: 178px;
     height: 37px;
@@ -88,6 +107,14 @@ padding: 300px 0 330px;
         justify-content: center;
         align-items: center;
 }
+@media only screen and (min-width: 768px){
+    .email-item {
+width: 223px;
+    height: 55px;
+    }
+
+}
+  
 .email-item:hover,
 .email-item:focus {
     background-color: #2b4441;
