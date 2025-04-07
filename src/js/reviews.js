@@ -51,16 +51,16 @@ async function generateReviews() {
     simulateTouch: true,
     spaceBetween: 16,
     breakpoints: {
-      320: {
-        slidesPerView: 1,
+      1440: {
+        slidesPerView: 4,
         spaceBetween: 16,
       },
       768: {
         slidesPerView: 2,
         spaceBetween: 16,
       },
-      1280: {
-        slidesPerView: 4,
+      320: {
+        slidesPerView: 1,
         spaceBetween: 16,
       },
     },
@@ -85,26 +85,34 @@ async function generateReviews() {
   const reviews_card = document.querySelectorAll('.reviews-item');
 
   reviews_card.forEach(card => {
-    card.addEventListener('mouseenter', event => {
+    card.addEventListener('click', event => {
       const rect = card.getBoundingClientRect();
       const cardClone = card.cloneNode(true);
-      card.style.opacity = 0;
+
+      const modalOverlay = document.createElement('div');
+      modalOverlay.classList.add('reviews-modal');
+      const container = document.createElement('div');
+      container.classList.add('container')
       cardClone.classList.add('card-clone');
-      cardClone.classList.add('card-open');
-      cardClone.style.position = 'absolute';
-      cardClone.style.top = `${rect.top + window.scrollY}px`;
-      cardClone.style.left = `${rect.left + window.scrollX}px`;
-      cardClone.style.width = `${rect.width}px`;
-      cardClone.style.maxHeight = 'max-content';
-      cardClone.style.zIndex = '1000';
-      cardClone.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
-      cardClone.style.backgroundColor = '#1c1d22';
+      cardClone.style.margin = '0';
 
-      document.body.appendChild(cardClone);
+      const closeButton = document.createElement('button');
+      closeButton.classList.add('reviews-modal-close');
+      closeButton.textContent = 'Close';
 
-      cardClone.addEventListener('mouseleave', () => {
-        cardClone.remove();
-        card.style.opacity = 1;
+      cardClone.appendChild(closeButton);
+      modalOverlay.appendChild(container);
+      container.appendChild(cardClone)
+      document.body.appendChild(modalOverlay);
+
+      closeButton.addEventListener('click', () => {
+        modalOverlay.remove();
+      });
+
+      modalOverlay.addEventListener('click', e => {
+        if (e.target === modalOverlay) {
+          modalOverlay.remove();
+        }
       });
     });
   });
@@ -123,14 +131,14 @@ function handleScroll() {
       title: 'Oops!',
       message: 'No reviews found for this section.',
       timeout: 5000,
-      backgroundColor: '#2c2f33', 
-      titleColor: '#FF6B6B', 
-      messageColor: '#FFFFFF', 
-      icon: 'fas fa-exclamation-circle', 
+      backgroundColor: '#2c2f33',
+      titleColor: '#FF6B6B',
+      messageColor: '#FFFFFF',
+      icon: 'fas fa-exclamation-circle',
       iconColor: '#FF6B6B',
-      position: 'topRight', 
-      progressBarColor: '#FF6B6B', 
-      transitionIn: 'fadeInDown', 
+      position: 'topRight',
+      progressBarColor: '#FF6B6B',
+      transitionIn: 'fadeInDown',
       transitionOut: 'fadeOutUp',
     });
 
