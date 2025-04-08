@@ -58,6 +58,12 @@
     background-color: #fafafa33;
 }
 
+@media only screen and (max-width: 375px) {
+  .hero-social {
+    flex-wrap: wrap;
+  }
+}
+
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
     .hero {
