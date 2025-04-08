@@ -10,13 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const aboutMe_btn_next = document.querySelector('.aboutMe-swiper-button-next');
-  const swiper = new Swiper('.skills-slider', {
+  const swiper = new Swiper('.aboutMe-swiper', {
     spaceBetween: 0,
     loop: true,
     modules: [Navigation],
     navigation: {
-      nextEl: aboutMe_btn_next,
+      nextEl: '.aboutMe-swiper-button-next',
     },
     keyboard: {
       enabled: true,
@@ -24,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     breakpoints: {
       1440: {
-        slidesPerView: 4,
+        slidesPerView: 6,
       },
       768: {
         slidesPerView: 3,
@@ -35,11 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+ 
   swiper.on('slideChange', () => {
     document
       .querySelectorAll('.swiper-slide')
       .forEach(slide => slide.classList.remove('active'));
     swiper.slides[swiper.activeIndex].classList.add('active');
   });
+
 });
 
