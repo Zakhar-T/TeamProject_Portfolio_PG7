@@ -139,18 +139,25 @@
 }
 
 .accordion-toggle {
-  width: 24px;
-  height: 24px;
   background: url('../img/accordion-icon.svg') no-repeat center;
   background-size: contain;
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease;
+
+  padding: 9px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
 }
 
 /* Rotate icon if open */
 .accordion-item.open .accordion-toggle {
   transform: rotate(180deg);
+}
+
+.about-me-icon {
+  display: flex;
+  stroke: currentColor;
 }
 
 .accordion-content {
@@ -242,5 +249,4 @@
   justify-content: space-between;
   width: 1200px !important;
   overflow: hidden;
-  
 }
