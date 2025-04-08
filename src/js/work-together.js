@@ -39,16 +39,15 @@ function submitForm(evt) {
             const modal = document.getElementById('modalW');
             const modalContainer = modal.parentNode;
             body.classList.add('mobMenuOpen');
-
             body.classList.add('on-scroll');
 
-            body.addEventListener('keydown', escClose);
+            document.addEventListener('keydown', escClose);
             function escClose(evt) {
                 if (evt.keyCode === 27) {
                     instance.close();
                     if (modalContainer.classList.contains('basicLightbox__placeholder')) {
                         body.classList.remove('mobMenuOpen');
-                        body.removeEventListener('keydown', escClose);
+                        document.removeEventListener('keydown', escClose);
                         body.classList.toggle('on-scroll');
                     }
                 }
