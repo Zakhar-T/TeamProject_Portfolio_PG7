@@ -16,7 +16,7 @@
 }
 
 body {
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 100vh;
 }
 
@@ -35,4 +35,20 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+.section {
+  padding: 32px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: 48px 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .section {
+    padding: 82px 0;
+  }
 }
