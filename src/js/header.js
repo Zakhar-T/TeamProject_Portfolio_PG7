@@ -3,12 +3,16 @@ import uniPng from '/img/header/uni.webp';
 const menuBtnOpn = document.getElementById('hdr-openmenu');
 menuBtnOpn.addEventListener('click', onMenuOpenClick);
 
+let closeDelay;
 function onMenuOpenClick(evt) {
   setNyan();
 
   let menu;
   if (evt.target.tagName === 'SPAN') {
     menu = document.querySelector('.hdr-menu');
+    closeDelay = setTimeout(() => {
+      menu.classList.remove('menu-visible');
+    }, 5000);
   } else {
     menu = document.querySelector('.mobile-menu');
     menu.addEventListener('click', onMenuCloseClick);
