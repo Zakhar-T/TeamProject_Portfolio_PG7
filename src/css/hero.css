@@ -1,30 +1,47 @@
 .hero {
-       margin: 0 auto;
-    background-image:
-            url(../img/hero/Glass\ effect\ 1.png),
-            linear-gradient(to right, #2B4441 0%, #1E3633 34%, #1C1D20 50%, #1C1D20 100%);
+    background-image: 
+            url(../img/hero/Glass\ effect\ 2.png),
+            linear-gradient(to right, #ed3b44 0%,
+                #69292d 32.27%,
+                #1c1d20 50.32%,
+                #1c1d20 100%);
         backdrop-filter: blur(4px);
         background-repeat: no-repeat;
-       background-position: 100%;
+       background-position: center;
         background-size: cover;
-        max-width: 375px;
-}
-@media only screen and (min-widtH: 768px) {
-    .hero {
-        max-width: 768px;
-        background-position: 400%;
+        width: 100%;
         padding-top: 0;
+}
+@media only screen and (min-width: 768px) {
+    .hero {
+       
+        background-position: 400%;
         padding-bottom: 32px;
-        padding-top:300px;
     }
 }
 @media only screen and (min-width: 1440px) {
 .hero{
-    max-width: 1440px;
-    background-position: 500%;
+    
     padding-left: 178px;
    }
 }
+.hero-container{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 281px;
+    
+}
+@media only screen and (min-width: 768px) {
+.hero-container{
+    padding-top: 300px 0 0;
+}
+}
+@media only screen and (min-width: 1440px) {
+    .hero-container {
+        padding-left: 0;
+        padding-right: 0;
+        
+}}
 .hero-title {
     font-weight: 500;
         font-size: 50px;
@@ -35,12 +52,17 @@
     margin: 0 auto;
     padding: 0 0;
 }
-@media only screen and (min-widtH: 768px){
+@media only screen and (min-width: 768px){
     .hero-title{
         font-size: 90px;
         padding: 0 0;
     }
 }
+@media only screen and (min-width: 1440px) {
+    .hero-title {
+        max-width: 1084px;
+        
+    }}
 .soc-list {
     display: flex;
     flex-direction: row;
@@ -48,12 +70,12 @@
     gap: 8px;
        padding: 212px 0 0;
 }
-@media only screen and (min-widtH: 768px){
+@media only screen and (min-width: 768px){
     .soc-list{
         padding: 187px 0 0;
               justify-content: flex-end;
 }}
-@media only screen and (min-widtH: 768px){
+@media only screen and (min-width: 768px){
     .soc-list{
         padding: 243px 0 0;
     }
@@ -76,7 +98,7 @@ height: 55px;
 }                       
 .soc-item:hover,
 .soc-item:focus {
-    background-color: #2b4441;}
+    background-color: #E0373F;;}
 .social-link {
     display: flex;
         justify-content: center;
@@ -107,5 +129,5 @@ width: 223px;
 }
   .email-item:hover,
 .email-item:focus {
-    background-color: #2b4441;
+    background-color: #E0373F;
 }
