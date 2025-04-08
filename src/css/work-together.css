@@ -17,9 +17,7 @@
   }
 }
 
-
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .work-together-section {
     background-image: url(../img/work-together/bg@2x.png);
   }
