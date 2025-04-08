@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/TeamProject_Portfolio_PG7/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500..600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lloyd Jefferson's Portfolio - Fullstack developer. Case studies, work examples and professional achievements. HTML/CSS, JavaScript, React, Node. js, React Native"
+    />
+    <title>Portfolio</title>
+    <script type="module" crossorigin src="/TeamProject_Portfolio_PG7/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/TeamProject_Portfolio_PG7/assets/vendor-BT8PZZrf.js">
+    <link rel="stylesheet" crossorigin href="/TeamProject_Portfolio_PG7/assets/vendor-CQFum3Ng.css">
+    <link rel="stylesheet" crossorigin href="/TeamProject_Portfolio_PG7/assets/index-GjOXg65p.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/TeamProject_Portfolio_PG7/favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500..600&display=swap" rel="stylesheet" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Lloyd Jefferson's Portfolio - Fullstack developer. Case studies, work examples and professional achievements. HTML/CSS, JavaScript, React, Node. js, React Native">
-  <title>Portfolio</title>
-  <script type="module" crossorigin src="/TeamProject_Portfolio_PG7/index.js"></script>
-  <link rel="modulepreload" crossorigin href="/TeamProject_Portfolio_PG7/assets/vendor-BT8PZZrf.js">
-  <link rel="stylesheet" crossorigin href="/TeamProject_Portfolio_PG7/assets/vendor-CQFum3Ng.css">
-  <link rel="stylesheet" crossorigin href="/TeamProject_Portfolio_PG7/assets/index-BLR_Ad6m.css">
-</head>
-
-<body>
-  <header class="header" id="header">
+  <body>
+    <header class="header" id="header">
     <div class="container">
         <div class="mobile-menu">
             <button class="header-closemenu hdr-btn" id="hdr-closemenu" aria-label="close menu">
                 <svg class="hdr-icon" width="28" height="28">
-                    <use href="/TeamProject_Portfolio_PG7/assets/sprite-B1GiVtLl.svg#cross"></use>
+                    <use href="/TeamProject_Portfolio_PG7/assets/sprite-DcT2fitq.svg#cross"></use>
                 </svg>
             </button>
             <ul class="nav-list">
@@ -60,7 +64,7 @@
                 <button class="hdr-btn" id="hdr-openmenu" aria-label="open menu">
                     <span class="hdr-menu-label">Menu</span>
                     <svg class="hdr-burger hdr-icon" width="28" height="28">
-                        <use href="/TeamProject_Portfolio_PG7/assets/sprite-B1GiVtLl.svg#burger"></use>
+                        <use href="/TeamProject_Portfolio_PG7/assets/sprite-DcT2fitq.svg#burger"></use>
                     </svg>
                 </button>
                 <ul class="hdr-menu nav-list">
@@ -84,8 +88,8 @@
     </div>
 </header>
 
-  <main>
-    <!-- <section class="hero">
+    <main>
+      <!-- <section class="hero section">
   <div class="container hero-container">
     <h1 class="hero-title">
       Hello.<br />I’m Fullstack developer <br />Lloyd Jefferson.
@@ -131,7 +135,7 @@
   </div>
 </section>
  -->
-    <section class="about-me" id="about">
+      <section class="about-me section" id="about-me">
   <div class="container">
     <h2 class="visually-hidden">About Me</h2>
     <div class="about-me__box">
@@ -161,7 +165,11 @@
       <li class="accordion-item open">
         <div class="accordion-header">
           <h3>About Me</h3>
-          <button class="accordion-toggle" aria-label="Toggle content"></button>
+          <button class="accordion-toggle" aria-label="Toggle content">
+            <svg class="about-me-icon" width="18" height="18">
+              <use href="/TeamProject_Portfolio_PG7/assets/sprite-DcT2fitq.svg#up-arrow"></use>
+            </svg>
+          </button>
         </div>
         <div class="accordion-content">
           <p class="accordion-content-first">
@@ -190,7 +198,11 @@
       <li class="accordion-item">
         <div class="accordion-header">
           <h3>Role</h3>
-          <button class="accordion-toggle" aria-label="Toggle content"></button>
+          <button class="accordion-toggle" aria-label="Toggle content">
+            <svg class="about-me-icon" width="18" height="18">
+              <use href="/TeamProject_Portfolio_PG7/assets/sprite-DcT2fitq.svg#up-arrow"></use>
+            </svg>
+          </button>
         </div>
         <div class="accordion-content">
           <p>Frontend development</p>
@@ -201,7 +213,11 @@
       <li class="accordion-item">
         <div class="accordion-header">
           <h3>Education</h3>
-          <button class="accordion-toggle" aria-label="Toggle content"></button>
+          <button class="accordion-toggle" aria-label="Toggle content">
+            <svg class="about-me-icon" width="18" height="18">
+              <use href="/TeamProject_Portfolio_PG7/assets/sprite-DcT2fitq.svg#up-arrow"></use>
+            </svg>
+          </button>
         </div>
         <div class="accordion-content">
           <p>2018-2019 | Frontend Development Diploma, QUT IT</p>
@@ -233,68 +249,66 @@
   </div>
 </section>
 
-    <section class="section">
-  <h2 class="text-section">BENEFITS OF WORKING WITH ME</h2>
-  <div class="content-wrapper">
-    <ul class="benefits-list">
-      <li class="column">
-        <div class="icons-box">
-          <svg class="icon-benefits" width="24" height="24">
-            <use href="/src/img/sprite.svg#benefits-icon1"></use>
-          </svg>
-        </div>
-        <h3 class="text">Expertise</h3>
-        <p class="text-column">
-          As a highly experienced developer, I have deep knowledge of
-          programming and website development.
-        </p>
-      </li>
-
-      <li class="column">
-        <div class="icons-box">
-          <svg class="icon-benefits" width="24" height="24">
-            <use href="/src/img/sprite.svg#benefits-icon2"></use>
-          </svg>
-        </div>
-        <h3 class="text">Communication</h3>
-        <p class="text-column">
-          Understanding your needs and wants is my priority and I am always open
-          to discussions and corrections.
-        </p>
-      </li>
-
-      <li class="column">
-        <div class="icons-box">
-          <svg class="icon-benefits" width="24" height="24">
-            <use href="/src/img/sprite.svg#benefits-icon3"></use>
-          </svg>
-        </div>
-        <h3 class="text">Art</h3>
-        <p class="text-column">
-          Thanks to my creative nature, I am ready to accept challenges and help
-          you bring your ideas to life.
-        </p>
-      </li>
-
-      <li class="column">
-        <div class="icons-box">
-          <svg class="icon-benefits" width="24" height="24">
-            <use href="/src/img/sprite.svg#benefits-icon4"></use>
-          </svg>
-        </div>
-        <h3 class="text">Urgent execution</h3>
-        <p class="text-column">
-          I understand how important time is to you. Ready to work quickly and
-          efficiently, without reducing the quality of work.
-        </p>
-      </li>
-    </ul>
-    <a href="#work-together" class="benefits-link">Order the project</a>
+      <section class="section" id="benefits">
+  <div class="container">
+    <h2 class="benefits-title">BENEFITS OF WORKING WITH ME</h2>
+    <div class="benefits-content-wrapper">
+      <ul class="benefits-list">
+        <li class="benefits-item">
+          <div class="icons-box">
+            <svg class="icon-benefits" width="24" height="24">
+              <use href="/src/img/sprite.svg#icon-user-01"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-item-title">Expertise</h3>
+          <p class="benefits-item-text">
+            As a highly experienced developer, I have deep knowledge of
+            programming and website development.
+          </p>
+        </li>
+        <li class="benefits-item">
+          <div class="icons-box">
+            <svg class="icon-benefits" width="24" height="24">
+              <use href="/src/img/sprite.svg#icon-message-chat-circle"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-item-title">Communication</h3>
+          <p class="benefits-item-text">
+            Understanding your needs and wants is my priority and I am always
+            open to discussions and corrections.
+          </p>
+        </li>
+        <li class="benefits-item">
+          <div class="icons-box">
+            <svg class="icon-benefits" width="24" height="24">
+              <use href="/src/img/sprite.svg#icon-brush-01"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-item-title">Art</h3>
+          <p class="benefits-item-text">
+            Thanks to my creative nature, I am ready to accept challenges and
+            help you bring your ideas to life.
+          </p>
+        </li>
+        <li class="benefits-item">
+          <div class="icons-box">
+            <svg class="icon-benefits" width="24" height="24">
+              <use href="/src/img/sprite.svg#icon-hourglass-02"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-item-title">Urgent execution</h3>
+          <p class="benefits-item-text">
+            I understand how important time is to you. Ready to work quickly and
+            efficiently, without reducing the quality of work.
+          </p>
+        </li>
+      </ul>
+      <a href="#work-together" class="benefits-link">Order the project</a>
+    </div>
   </div>
 </section>
-<section id="work-together"></section>
 
-    <section class="projects" id="projects">
+      <section class="projects section" id="projects">
   <div class="container">
     <h2 class="proj-title">Projects</h2>
     <div class="proj-swiper swiper">
@@ -452,12 +466,12 @@
       <div class="proj-nav-btn">
         <button type="button" class="proj-button-left proj-button">
           <svg width="24" height="24" class="proj-svg">
-            <use href="/TeamProject_Portfolio_PG7/assets/sprite-B1GiVtLl.svg#icon-arrow-narrow-right"></use>
+            <use href="/TeamProject_Portfolio_PG7/assets/sprite-DcT2fitq.svg#icon-arrow-narrow-right"></use>
           </svg>
         </button>
         <button type="button" class="proj-button-right proj-button">
           <svg width="24" height="24" class="proj-svg">
-            <use href="/TeamProject_Portfolio_PG7/assets/sprite-B1GiVtLl.svg#icon-arrow-narrow-right"></use>
+            <use href="/TeamProject_Portfolio_PG7/assets/sprite-DcT2fitq.svg#icon-arrow-narrow-right"></use>
           </svg>
         </button>
       </div>
@@ -465,123 +479,134 @@
   </div>
 </section>
 
-    <section class="faq" id="faq">
-    <div class="faq-container container">
-        <h2 class="faq-title">FAQ</h2>
-        <ul class="faq-list accordion-container">
-            <li class="faq-item ac">
-                <h3 class="ac-header">
-                    <button type="button" class="faq-button ac-trigger">
-                        <span class="faq-question">What programming languages ​​are most often used in your
-                            project?</span>
-                        <svg class="faq-icon" width="12" height="8">
-                            <use href="/TeamProject_Portfolio_PG7/assets/sprite-B1GiVtLl.svg#up-arrow"></use>
-                        </svg>
-                    </button>
-                </h3>
-                <div class="ac-panel">
-                    <p class="faq-answer ac-text">
-                        In the field of web development, there are various technologies and programming languages.
-                        Typically, this includes a
-                        combination of frontend (client side) and backend (server side) languages.
-                    </p>
-                </div>
-            </li>
-            <li class="faq-item ac">
-                <h3 class="ac-header">
-                    <button type="button" class="faq-button ac-trigger">
-                        <span class="faq-question">What are the deadlines for the&nbsp;project?</span>
-                        <svg class="faq-icon" width="12" height="8">
-                            <use href="/TeamProject_Portfolio_PG7/assets/sprite-B1GiVtLl.svg#up-arrow"></use>
-                        </svg>
-                    </button>
-                </h3>
-                <div class="ac-panel">
-                    <p class="faq-answer ac-text">
-                        The terms of project implementation depend to a large extent on a number of factors, such as the
-                        scope of the project,
-                        its complexity, and the availability of resources. Determining exact deadlines is a difficult
-                        task, and it usually
-                        occurs during the planning phase of the project.
-                    </p>
-                </div>
-            </li>
-            <li class="faq-item ac">
-                <h3 class="ac-header">
-                    <button type="button" class="faq-button ac-trigger">
-                        <span class="faq-question">What payment methods do you accept?</span>
-                        <svg class="faq-icon" width="12" height="8">
-                            <use href="/TeamProject_Portfolio_PG7/assets/sprite-B1GiVtLl.svg#up-arrow"></use>
-                        </svg>
-                    </button>
-                </h3>
-                <div class="ac-panel">
-                    <p class="faq-answer ac-text">
-                        Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment
-                        systems such as PayPal,
-                        as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.
-                    </p>
-                </div>
-            </li>
-            <li class="faq-item ac">
-                <h3 class="ac-header">
-                    <button type="button" class="faq-button ac-trigger">
-                        <span class="faq-question">How can I contact you?</span>
-                        <svg class="faq-icon" width="12" height="8">
-                            <use href="/TeamProject_Portfolio_PG7/assets/sprite-B1GiVtLl.svg#up-arrow"></use>
-                        </svg>
-                    </button>
-                </h3>
-                <div class="ac-panel">
-                    <p class="faq-answer ac-text">
-                        In the field of web development, there are various technologies and programming languages.
-                        Typically, this includes a
-                        combination of frontend (client side) and backend (server side) languages.
-                    </p>
-                </div>
-            </li>
-            <li class="faq-item ac">
-                <h3 class="ac-header">
-                    <button type="button" class="faq-button ac-trigger">
-                        <span class="faq-question">Do you provide advice or&nbsp;support?</span>
-                        <svg class="faq-icon" width="12" height="8">
-                            <use href="/TeamProject_Portfolio_PG7/assets/sprite-B1GiVtLl.svg#up-arrow"></use>
-                        </svg>
-                    </button>
-                </h3>
-                <div class="ac-panel">
-                    <p class="faq-answer ac-text">
-                        The terms of project implementation depend to a large extent on a number of factors, such as the
-                        scope of the project,
-                        its complexity, and the availability of resources. Determining exact deadlines is a difficult
-                        task, and it usually
-                        occurs during the planning phase of the project.
-                    </p>
-                </div>
-            </li>
-            <li class="faq-item ac">
-                <h3 class="ac-header">
-                    <button type="button" class="faq-button ac-trigger">
-                        <span class="faq-question">What does the process of developing a software
-                            product look like from idea to implementation?</span>
-                        <svg class="faq-icon" width="12" height="8">
-                            <use href="/TeamProject_Portfolio_PG7/assets/sprite-B1GiVtLl.svg#up-arrow"></use>
-                        </svg>
-                    </button>
-                </h3>
-                <div class="ac-panel">
-                    <p class="faq-answer ac-text">
-                        Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment
-                        systems such as PayPal,
-                        as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.
-                    </p>
-                </div>
-            </li>
-        </ul>
-    </div>
+      <section class="faq section" id="faq">
+  <div class="faq-container container">
+    <h2 class="faq-title">FAQ</h2>
+    <ul class="faq-list accordion-container">
+      <li class="faq-item ac">
+        <h3 class="ac-header">
+          <button type="button" class="faq-button ac-trigger">
+            <span class="faq-question"
+              >What programming languages ​​are most often used in your
+              project?</span
+            >
+            <svg class="faq-icon" width="12" height="8">
+              <use href="/TeamProject_Portfolio_PG7/assets/sprite-DcT2fitq.svg#up-arrow"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="faq-answer ac-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item ac">
+        <h3 class="ac-header">
+          <button type="button" class="faq-button ac-trigger">
+            <span class="faq-question"
+              >What are the deadlines for the&nbsp;project?</span
+            >
+            <svg class="faq-icon" width="12" height="8">
+              <use href="/TeamProject_Portfolio_PG7/assets/sprite-DcT2fitq.svg#up-arrow"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="faq-answer ac-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item ac">
+        <h3 class="ac-header">
+          <button type="button" class="faq-button ac-trigger">
+            <span class="faq-question"
+              >What payment methods do you accept?</span
+            >
+            <svg class="faq-icon" width="12" height="8">
+              <use href="/TeamProject_Portfolio_PG7/assets/sprite-DcT2fitq.svg#up-arrow"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="faq-answer ac-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item ac">
+        <h3 class="ac-header">
+          <button type="button" class="faq-button ac-trigger">
+            <span class="faq-question">How can I contact you?</span>
+            <svg class="faq-icon" width="12" height="8">
+              <use href="/TeamProject_Portfolio_PG7/assets/sprite-DcT2fitq.svg#up-arrow"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="faq-answer ac-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item ac">
+        <h3 class="ac-header">
+          <button type="button" class="faq-button ac-trigger">
+            <span class="faq-question"
+              >Do you provide advice or&nbsp;support?</span
+            >
+            <svg class="faq-icon" width="12" height="8">
+              <use href="/TeamProject_Portfolio_PG7/assets/sprite-DcT2fitq.svg#up-arrow"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="faq-answer ac-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item ac">
+        <h3 class="ac-header">
+          <button type="button" class="faq-button ac-trigger">
+            <span class="faq-question"
+              >What does the process of developing a software product look like
+              from idea to implementation?</span
+            >
+            <svg class="faq-icon" width="12" height="8">
+              <use href="/TeamProject_Portfolio_PG7/assets/sprite-DcT2fitq.svg#up-arrow"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="faq-answer ac-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
 </section>
-    
-    <section class="covers" id="covers">
+
+      
+      <section class="covers section" id="covers">
   <div class="container">
     <h2 class="covers-header visually-hidden">Covers</h2>
     <div class="covers-wrapper">
@@ -999,27 +1024,36 @@
   </div>
 </section>
 
-    <section class="reviews" id="reviews">
-    <div class="container">
-        <h2 class="visually-hidden">Rewiews</h2>
-        <div class="reviews-swiper swiper">
-            <ul class="reviews-list swiper-wrapper"></ul>
-            <div class="reviews-button-box">
-                <button type="button" class="reviews-button reviews-button-prev" disabled>
-                    <svg class="reviews-icon" width="32" height="32">
-                        <use href="/TeamProject_Portfolio_PG7/assets/sprite-B1GiVtLl.svg#icon-arrow-narrow-right"></use>
-                    </svg>
-                </button>
-                <button type="button" class="reviews-button reviews-button-next" disabled>
-                    <svg class="reviews-icon" width="32" height="32">
-                        <use href="/TeamProject_Portfolio_PG7/assets/sprite-B1GiVtLl.svg#icon-arrow-narrow-right"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
+      <section class="reviews section" id="reviews">
+  <div class="container">
+    <h2 class="visually-hidden">Rewiews</h2>
+    <div class="reviews-swiper swiper">
+      <ul class="reviews-list swiper-wrapper"></ul>
+      <div class="reviews-button-box">
+        <button
+          type="button"
+          class="reviews-button reviews-button-prev"
+          disabled
+        >
+          <svg class="reviews-icon" width="32" height="32">
+            <use href="/TeamProject_Portfolio_PG7/assets/sprite-DcT2fitq.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="reviews-button reviews-button-next"
+          disabled
+        >
+          <svg class="reviews-icon" width="32" height="32">
+            <use href="/TeamProject_Portfolio_PG7/assets/sprite-DcT2fitq.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </button>
+      </div>
     </div>
+  </div>
 </section>
-    <section class="work-together-section section" id="work-together">
+
+      <section class="work-together-section section" id="work-together">
     <div class="work-together-container container ">
         <!-- logo, title -->
         <div class="work-together-container-wrapper">
@@ -1058,8 +1092,7 @@
         </address>
     </div>
 </section>
-  </main>
+    </main>
 
-</body>
-
+  </body>
 </html>
