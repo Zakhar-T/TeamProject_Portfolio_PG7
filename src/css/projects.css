@@ -71,7 +71,9 @@
 }
 
 .proj-link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ed3b44;
     
     border-radius: 60px;
