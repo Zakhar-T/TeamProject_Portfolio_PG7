@@ -135,7 +135,7 @@
 
     .mobile-menu.menu-visible {
         pointer-events: auto;
-        opacity: 0.85;
+        opacity: 1;
         visibility: visible;
         transform: translateX(0%);
     }
@@ -143,7 +143,7 @@
     @media only screen and (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .mobile-menu {
-            background-image: url(../img/header/header_bg@2x.webp), linear-gradient(to right, #C6E327 0%, #596808 34%, #1C1D20 50%, #1C1D20 100%);
+            background-image: url(../img/header/header_bg@2x.webp), linear-gradient(to right, #ed3b44 0%, #69292d 34%, #1C1D20 50%, #1C1D20 100%);
 
         }
     }
