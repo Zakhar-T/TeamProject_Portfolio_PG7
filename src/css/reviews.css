@@ -41,16 +41,38 @@
 .reviews-button-box {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 12px;
 }
+
 
 .reviews-button {
   border-radius: 60px;
   border: solid 1px #fafafa80;
-  padding: 18px;
+  padding: 13px;
   background-color: transparent;
   transition: background-color 0.3s ease-in-out;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+@media screen and (min-width: 768px) {
+  .reviews-button-box {
+    gap: 20px;
+  }
+
+  .reviews-button{
+    padding: 17px;
+  }
+
+  .reviews-icon{
+    width: 32px;
+    height: 32px;
+  }
+}
+    
+  
 
 .reviews-button:focus,
 .reviews-button:hover {
