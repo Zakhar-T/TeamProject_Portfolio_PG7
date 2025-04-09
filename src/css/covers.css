@@ -6,8 +6,8 @@
 }
 
 .covers .container {
-    height: 508px;
     position: relative;
+    height: 508px;
     padding: 0;
     overflow: hidden;
 }
@@ -26,10 +26,9 @@
 }
 
 .covers-wrapper {
-    /* position: absolute; */
-    /* overflow: hidden; */
-    /* width: 100vw; */
-    height: 100%;
+    position: absolute;
+    top: -360px;
+    left: -1640px;
     transform: rotate(17deg);
 }
 
@@ -37,29 +36,30 @@
     position: relative;
     display: flex;
     transform: translateY(-185px);
-    align-items: center;
-    justify-content: center;
     gap: 22px;
     margin-bottom: 22px;
     height: 163px;
 }
 
-/* .covers-set:nth-child(1) {} */
-
-.covers-set:nth-child(2) {
+.covers-set:nth-child(1) {
     left: 0px;
 }
 
+.covers-set:nth-child(2) {
+    left: 150px;
+}
+
 .covers-set:nth-child(3) {
-    left: 100px;
+    left: 300px;
 }
 
 .covers-set:nth-child(4) {
     left: 150px;
 }
 
-/* 
-.covers-set:nth-child(5) {} */
+.covers-set:nth-child(5) {
+    left: 0;
+}
 
 @media only screen and (min-width: 768px) {
     .covers-set {
@@ -73,8 +73,6 @@
     display: block;
     height: 100%;
     min-width: 282px;
-    align-items: center;
-    justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -91,22 +89,34 @@
 
 .covers.onScreen .covers-set-img {
     white-space: nowrap;
-    animation-name: marqueeLine;
-    
     /* Speed is controled by this prop */
-    animation-duration: 20s;
+    animation-duration: 50s;
 
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
-/* .covers.onScreen .covers-set-img {
-    transform: translateX(250%);
-    transform: translateX(-289%);
-} */
+.covers.onScreen .covers-set:nth-child(1) .covers-set-img {
+    animation-name: marqueeLine-left;
+}
 
+.covers.onScreen .covers-set:nth-child(2) .covers-set-img {
+    animation-name: marqueeLine-right;
+}
 
-@keyframes marqueeLine {
+.covers.onScreen .covers-set:nth-child(3) .covers-set-img {
+    animation-name: marqueeLine-left;
+}
+
+.covers.onScreen .covers-set:nth-child(4) .covers-set-img {
+    animation-name: marqueeLine-right;
+}
+
+.covers.onScreen .covers-set:nth-child(5) .covers-set-img {
+    animation-name: marqueeLine-left;
+}
+
+@keyframes marqueeLine-left {
     from {
         transform: translateX(250%);
     }
@@ -117,13 +127,35 @@
 }
 
 @media only screen and (min-width: 768px) {
-    @keyframes marqueeLine {
+    @keyframes marqueeLine-left {
         from {
             transform: translateX(250%);
         }
 
         to {
             transform: translateX(-270%);
+        }
+    }
+}
+
+@keyframes marqueeLine-right {
+    from {
+        transform: translateX(-250%);
+    }
+
+    to {
+        transform: translateX(+288%);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    @keyframes marqueeLine-right {
+        from {
+            transform: translateX(-250%);
+        }
+
+        to {
+            transform: translateX(+270%);
         }
     }
 }
