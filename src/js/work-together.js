@@ -58,6 +58,7 @@ function submitForm(evt) {
                     if (modalContainer.classList.contains('basicLightbox__placeholder')) {
                         body.classList.remove('mobMenuOpen');
                         body.classList.toggle('on-scroll');
+                        document.removeEventListener('keydown', escClose);
                     }
                 }
             });
@@ -66,6 +67,7 @@ function submitForm(evt) {
                 if (modalContainer.classList.contains('basicLightbox__placeholder')) {
                     body.classList.remove('mobMenuOpen');
                     body.classList.toggle('on-scroll');
+                    document.removeEventListener('keydown', escClose);
                 }
             };
             userEmail.value = '';
