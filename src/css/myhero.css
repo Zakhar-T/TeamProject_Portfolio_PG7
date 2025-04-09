@@ -121,9 +121,8 @@
     }
 
     .hero-title {
-        margin: 0 auto;
+        margin: 0 auto 243px;
         width: 1084px;
-        margin-bottom: 243px;
     }
 
     .hero-social-link:hover {

@@ -41,7 +41,7 @@
     gap: 35px;
     border: none;
     background-color: transparent;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .faq-question {
@@ -58,6 +58,10 @@
 
 
 @media only screen and (min-width: 768px) {
+    .faq {
+        padding-bottom: 96px;
+    }
+    
     .faq-item {
         padding: 32px 0 24px;
     }
@@ -70,6 +74,10 @@
 }
 
 @media only screen and (min-width: 1440px) {
+    .faq {
+        padding-bottom: 164px;
+    }
+    
     .faq-list {
         display: flex;
         flex-wrap: wrap;
