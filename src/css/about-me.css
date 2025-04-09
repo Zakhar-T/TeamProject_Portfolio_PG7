@@ -249,8 +249,8 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #1c1d20;
   color: #fff;
@@ -281,10 +281,15 @@
   overflow: hidden;
 }
 
-.aboutMe-swiper-button-next > .reviews-icon {
+.aboutMe-swiper-button-next > .aboutMe-icon {
   stroke: #3b3b3b;
   fill: none;
 }
+
+.aboutMe-icon {
+    width: 28px;
+    height: 28px;
+  }
 
 @media (max-width: 768px) {
   .aboutMe-swiper {
@@ -311,10 +316,16 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+    .aboutMe-icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
 @media (max-width: 375px) {
   .skills-slider .swiper-slide {
-    width: 100px !important;
-    height: 100px;
+    width: 130px !important;
+    height: 130px;
     font-size: 13px;
   }
 
@@ -323,6 +334,18 @@
   }
 
   .aboutMe-swiper {
-    max-width: 200px;
+    max-width: 260px;
   }
+
+  .skills-slider .aboutMe-swiper-button-next {
+    width: 28px;
+    height: 28px;
+    right: 0px
+  }
+
 }
+  @media (max-width: 320px) {
+    .skills-slider .aboutMe-swiper-button-next {
+      right: -10px
+    }
+  }
