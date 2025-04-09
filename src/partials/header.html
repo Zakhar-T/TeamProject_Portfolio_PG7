@@ -26,9 +26,14 @@
 
         <nav class="hdr-nav">
             <a class="hdr-nav-logo" href="./index.html" aria-label="site logo">
-                <img class="hdr-logo-img" src="./img/header/logo@1x.webp"
-                    srcset="./img/header/logo@1x.webp 1x, ./img/header/logo@2x.webp 2x" alt="Site logo" width="80"
-                    height="80">
+                <picture class="hdr-logo-img">
+                    <source srcset="
+                      ./img/header/logo@1x.webp 1x,
+                      ./img/header/logo@2x.webp 2x
+                    " type="image/webp">
+                    <img class="hdr-logo-img" src="./img/header/logo@1x.jpg" alt="Site logo" width="80" height="80"
+                        loading="lazy">
+                </picture>
                 <div class="no-nyan">jefferson*</div>
                 <div class="nyan">
                     <span>j</span><span>e</span><span>f</span><span>f</span><span>e</span><span>r</span><span>s</span><span>o</span><span>n</span><span>*</span>
