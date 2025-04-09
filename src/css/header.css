@@ -107,8 +107,8 @@
         opacity: 0;
         visibility: hidden;
         transform: translateX(100%);
-        transition: 400ms cubic-bezier(0, -0.5, 0.5, 2);
-        transition-property: transform, opacity, visibility;
+        transition: 250ms ease-in-out;
+        transition-property: transform;
     }
 
     .hdr-menu-label {

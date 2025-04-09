@@ -1,5 +1,5 @@
-import logoJpg from '/img/header/logo.webp';
 import uniPng from '/img/header/uni.webp';
+// import logoJpg from '/img/header/logo@1x.webp';
 const menuBtnOpn = document.getElementById('hdr-openmenu');
 menuBtnOpn.addEventListener('click', onMenuOpenClick);
 
@@ -28,6 +28,7 @@ function onMenuCloseClick(evt) {
 }
 // #region Nyan
 const logo = document.querySelector('.hdr-nav-logo');
+let srcset;
 let nyanStopDelay;
 let nyanStarted = false;
 
@@ -51,7 +52,8 @@ function pauseAudio() {
     audio.currentTime = 0;
     logo.classList.remove('js-logo');
     logo.firstElementChild.style.animation = '';
-    logo.firstElementChild.setAttribute('src', logoJpg);
+    logo.firstElementChild.setAttribute('srcset', srcset);
+    // logo.firstElementChild.setAttribute('src', logoJpg);
     logo.removeEventListener('mouseover', playAudio);
     logo.removeEventListener('mouseout', pauseAudio);
     logo.removeEventListener('animationend', goNyan);
@@ -60,6 +62,8 @@ function pauseAudio() {
 }
 function goNyan() {
   logo.firstElementChild.style.animation = 'nyan 400ms infinite linear';
+  srcset = logo.firstElementChild.srcset;
+  logo.firstElementChild.removeAttribute('srcset');
   logo.firstElementChild.setAttribute('src', uniPng);
 }
 
