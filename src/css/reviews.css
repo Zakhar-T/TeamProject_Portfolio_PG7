@@ -1,3 +1,14 @@
+.reviews {
+  padding: 64px 0;
+}
+
+.reviews-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+
 .reviews-list {
   margin-bottom: 32px;
 }

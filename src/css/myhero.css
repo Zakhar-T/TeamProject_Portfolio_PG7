@@ -3,8 +3,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 169px;
-    /* padding-bottom: 32px; */
+    padding-top: 281px;
 }
 
 @media only screen and (min-resolution: 192dpi),
@@ -126,7 +125,6 @@
         width: 1084px;
         margin-bottom: 243px;
     }
-
 
     .hero-social-link:hover {
         background-color: #fafafa33;
