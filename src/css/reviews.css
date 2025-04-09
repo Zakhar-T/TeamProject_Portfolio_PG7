@@ -69,6 +69,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .reviews {
+    padding: 96px 0;
+  }
+  
   .reviews-button-box {
     gap: 20px;
   }
@@ -82,8 +86,12 @@
     height: 32px;
   }
 }
-    
-  
+
+@media only screen and (min-width: 1440px) {
+  .reviews {
+    padding: 164px 0;
+  }
+}
 
 .reviews-button:focus,
 .reviews-button:hover {

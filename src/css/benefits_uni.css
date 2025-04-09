@@ -76,6 +76,10 @@
 }
 
 @media only screen and (min-width: 1440px) {
+    .text-section {
+        margin-bottom: 0;
+    }
+    
     .benefits .container {
         flex-direction: row;
         justify-content: space-between;
