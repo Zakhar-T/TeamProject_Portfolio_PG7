@@ -11,34 +11,35 @@
         </h3>
       </div>
       <picture class="about-me__image">
-        <source
-          srcset="
+        <source srcset="img/about-me/myimg_m@1x.webp 1x,
+                        img/about-me/myimg_m@2x.webp 2x" media="(max-width: 375px)" type="image/webp" />
+        <source srcset="img/about-me/myimg_t@1x.webp 1x,
+                        img/about-me/myimg_t@2x.webp 2x" media="(min-width: 376px) and (max-width: 767px)"
+          type="image/webp" />
+        <source srcset="img/about-me/myimg_d@1x.webp 1x,
+                        img/about-me/myimg_d@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
+
+        <img src="img/about-me/myimg@1x.jpg" alt="Photo of Lloyd Jefferson" width="680" height="700" />
+      </picture>
+      <!-- <picture class="about-me__image">
+        <source srcset="
             ./img/about-me/myimg@1x.jpg 1x,
             ./img/about-me/myimg@2x.jpg 2x
-          "
-          type="image/jpeg"
-        />
-        <img
-          src="./img/about-me/myimg@1x.jpg"
-          alt="Photo of Lloyd Jefferson"
-          width="704"
-          height="700"
-        />
-      </picture>
+          " type="image/jpeg" />
+        <img src="./img/about-me/myimg@1x.jpg" alt="Photo of Lloyd Jefferson" width="704" height="700" />
+      </picture> -->
     </div>
 
-    <ul class="accordion">
-      <li class="accordion-item open">
-        <div class="accordion-header">
-          <h3>About Me</h3>
-          <button class="accordion-toggle" aria-label="Toggle content">
+    <ul class="abme-accordion">
+      <li class="accordion-item abme-ac">
+        <h3 class="accordion-header">About Me<button class="accordion-toggle abme-ac-trigger"
+            aria-label="Toggle content">
             <svg class="about-me-icon" width="18" height="18">
               <use href="./img/sprite.svg#up-arrow"></use>
             </svg>
-          </button>
-        </div>
-        <div class="accordion-content">
-          <p class="accordion-content-first">
+          </button></h3>
+        <div class="abme-ac-panel">
+          <p class="accordion-content-first abme-content">
             I am Lloyd Jefferson, a talented programmer with extensive expertise
             in software development. I have an understanding of different
             programming languages and technologies, always ready to improve my
@@ -47,7 +48,7 @@
             of analytical skills and am able to effectively solve even the most
             difficult tasks encountered on the way.
           </p>
-          <p>
+          <p class="abme-content">
             Able to work both independently and in a team. I can effectively
             cooperate with colleagues, exchanging ideas and finding optimal
             solutions. Professional maturity allows you to calmly cope with
@@ -61,39 +62,46 @@
           </p>
         </div>
       </li>
-      <li class="accordion-item">
-        <div class="accordion-header">
-          <h3>Role</h3>
-          <button class="accordion-toggle" aria-label="Toggle content">
+      <li class="accordion-item abme-ac">
+        <h3 class="accordion-header">Role<button class="accordion-toggle abme-ac-trigger" aria-label="Toggle content">
             <svg class="about-me-icon" width="18" height="18">
               <use href="./img/sprite.svg#up-arrow"></use>
             </svg>
-          </button>
-        </div>
-        <div class="accordion-content">
-          <p>Frontend development</p>
-          <p>HeadlessCMS, WordPress</p>
-          <p>Blender (enjoy)</p>
+          </button></h3>
+        <div class="abme-ac-panel">
+          <ul class="accordion-content">
+            <li>
+              <p class="abme-content">Frontend development</p>
+            </li>
+            <li>
+              <p class="abme-content">HeadlessCMS, WordPress</p>
+            </li>
+            <li>
+              <p class="abme-content">Blender (enjoy)</p>
+            </li>
+          </ul>
         </div>
       </li>
-      <li class="accordion-item">
-        <div class="accordion-header">
-          <h3>Education</h3>
-          <button class="accordion-toggle" aria-label="Toggle content">
+      <li class="accordion-item abme-ac">
+        <h3 class="accordion-header">Education<button class="accordion-toggle abme-ac-trigger"
+            aria-label="Toggle content">
             <svg class="about-me-icon" width="18" height="18">
               <use href="./img/sprite.svg#up-arrow"></use>
             </svg>
-          </button>
-        </div>
-        <div class="accordion-content">
-          <p>
-            2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
-          </p>
-          <p>
-            2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
-            New York
-          </p>
-          <p>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
+          </button></h3>
+        <div class="abme-ac-panel">
+          <ul class="accordion-content">
+            <li>
+              <p class="abme-content">2018 - 2019 / Frontend Development Diploma, GoIT IT<br>School, New York</p>
+            </li>
+            <li>
+              <p class="abme-content">2019 - 2020 / Advanced Web Development Certificate, GoIT IT<br>School, New York
+              </p>
+            </li>
+            <li>
+              <p class="abme-content">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
+            </li>
+          </ul>
         </div>
       </li>
     </ul>

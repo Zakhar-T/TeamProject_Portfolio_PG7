@@ -23,6 +23,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .about-me {
+    padding-top: 96px;
+  }
+
   .about-me__box {
     flex-direction: row;
     margin-bottom: 96px;
@@ -72,20 +76,25 @@
   }
 }
 
-.about-me__image {
-  display: block;
+.about-me__image img {
+  /* height: 100%; */
   border-radius: 24px;
-  height: 500px;
-  object-fit: cover;
+  /* object-fit: cover; */
+  /* overflow: hidden; */
 }
 
+/* 
 @media only screen and (min-width: 768px) {
   .about-me__image {
     height: auto;
   }
-}
+} */
 
 @media only screen and (min-width: 1440px) {
+  .about-me-text-section {
+    width: 680px;
+  }
+
   .about-me__image {
     height: 700px;
     width: 680px;
@@ -93,60 +102,65 @@
   }
 }
 
-.about-me__image img {
-  height: 100%;
-  border-radius: 24px;
-  object-fit: cover;
-  overflow: hidden;
-}
+
 
 /* Accordion Styles */
 
-.accordion {
+.abme-accordion {
   margin-bottom: 32px;
 }
 
 @media only screen and (min-width: 768px) {
-  .accordion {
+  .abme-accordion {
     margin-bottom: 64px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .accordion {
+  .abme-accordion {
     margin-bottom: 96px;
   }
 }
 
 .accordion-item {
-  padding-bottom: 32px;
   border-bottom: 1px solid #3B3B3B;
+  padding-bottom: 32px;
   margin-bottom: 20px;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .accordion-item {
+    margin-bottom: 32px;
+  }
 }
 
 .accordion-item:last-child {
   margin-bottom: 0;
 }
 
-.accordion-item.open {
-  padding-bottom: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  .accordion-item.open {
-    padding-bottom: 32px;
-  }
-}
-
 .accordion-header {
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(250, 250, 250, 0.4);
+  text-transform: uppercase;
 }
 
-.accordion-item.open>.accordion-header {
+.accordion-header:hover .abme-ac-trigger {
+  background-color: #fafafa33
+}
+
+.abme-ac-panel {
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+/* overflow: hidden; */
+/* transition: max-height 0.3s ease; */
+/* .accordion-item.open>.accordion-header {
   margin-bottom: 12px;
 }
 
@@ -154,17 +168,9 @@
   .accordion-item.open>.accordion-header {
     margin-bottom: 8px;
   }
-}
-
-.accordion-header h3 {
-  font-size: 16px;
-  font-weight: 600;
-  color: rgba(250, 250, 250, 0.4);
-}
+} */
 
 .accordion-toggle {
-  /* background: url('../img/accordion-icon.svg') no-repeat center; */
-  /* background-size: contain; */
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -185,8 +191,42 @@
   }
 }
 
+.abme-ac-panel {
+  padding-top: 12px;
+}
+
+.accordion-content-first {
+  margin-bottom: 32px;
+}
+
+.accordion-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .abme-ac-panel {
+    padding-top: 8px;
+  }
+
+  .accordion-content-first {
+    margin-bottom: 16px;
+  }
+}
+
+/* .abme-content {
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+} */
+
+
 /* Rotate icon if open */
-.accordion-item.open .accordion-toggle {
+.abme-ac.abme-ac-open .accordion-toggle {
   transform: rotate(180deg);
 }
 
@@ -194,41 +234,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  stroke: currentColor;
-}
-
-.accordion-content {
-  display: none;
+  stroke: #fafafa;
 }
 
 @media only screen and (min-width: 1440px) {
-  .accordion-item.open>.accordion-content {
+  .abme-ac-panel {
     width: 612px;
     padding-right: 68px;
     margin-left: auto;
   }
-}
-
-.accordion-content p {
-  margin-bottom: 10px;
-}
-
-.accordion-content>p:last-child {
-  margin-bottom: 0;
-}
-
-.accordion-content>.accordion-content-first {
-  margin-bottom: 32px;
-}
-
-@media only screen and (min-width: 768px) {
-  .accordion-content>.accordion-content-first {
-    margin-bottom: 16px;
-  }
-}
-
-.accordion-item.open .accordion-content {
-  display: block;
 }
 
 .skills-slider {
@@ -305,15 +319,15 @@
   overflow: hidden;
 }
 
-.aboutMe-swiper-button-next > .aboutMe-icon {
+.aboutMe-swiper-button-next>.aboutMe-icon {
   stroke: #3b3b3b;
   fill: none;
 }
 
 .aboutMe-icon {
-    width: 28px;
-    height: 28px;
-  }
+  width: 28px;
+  height: 28px;
+}
 
 @media (max-width: 768px) {
   .aboutMe-swiper {
@@ -341,11 +355,12 @@
 }
 
 @media screen and (min-width: 768px) {
-    .aboutMe-icon {
-      width: 40px;
-      height: 40px;
-    }
+  .aboutMe-icon {
+    width: 40px;
+    height: 40px;
   }
+}
+
 @media (max-width: 375px) {
   .skills-slider .swiper-slide {
     width: 130px !important;
@@ -368,8 +383,9 @@
   }
 
 }
-  @media (max-width: 320px) {
-    .skills-slider .aboutMe-swiper-button-next {
-      right: -10px
-    }
+
+@media (max-width: 320px) {
+  .skills-slider .aboutMe-swiper-button-next {
+    right: -10px
   }
+}
