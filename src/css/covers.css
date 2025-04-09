@@ -1,7 +1,5 @@
 .covers {
-    /* position: relative;
-    height: 508px;
-    padding: 0; */
+    padding: 0;
     background-color: rgba(217, 217, 217, 0.04);
     background-image: url(../img/covers/elements_vectors@1x.png);
     background-size: cover;
@@ -12,7 +10,6 @@
     position: relative;
     padding: 0;
     overflow: hidden;
-    max-width: 100%;
 }
 
 @media only screen and (min-width: 768px) {

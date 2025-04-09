@@ -126,6 +126,7 @@
   resize: none;
   text-overflow: ellipsis;
   height: 44px;
+  width: 100%;
 }
 
 .form-label-input:valid {
