@@ -95,7 +95,10 @@
 .covers.onScreen .covers-set-img {
     white-space: nowrap;
     animation-name: marqueeLine;
-    animation-duration: 10s;
+    
+    /* Speed is controled by this prop */
+    animation-duration: 20s;
+
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
