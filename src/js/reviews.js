@@ -46,7 +46,7 @@ async function generateReviews() {
 
   const rev_btn_next = document.querySelector('.reviews-button-next');
   const rev_btn_prev = document.querySelector('.reviews-button-prev');
-  const swiper = new Swiper('.reviews-swiper', {
+  const revSwiper = new Swiper('.reviews-swiper', {
     direction: 'horizontal',
     simulateTouch: true,
     spaceBetween: 16,
@@ -92,7 +92,7 @@ async function generateReviews() {
       const modalOverlay = document.createElement('div');
       modalOverlay.classList.add('reviews-modal');
       const container = document.createElement('div');
-      container.classList.add('container')
+      container.classList.add('container');
       cardClone.classList.add('card-clone');
       cardClone.style.margin = '0';
 
@@ -102,7 +102,7 @@ async function generateReviews() {
 
       cardClone.appendChild(closeButton);
       modalOverlay.appendChild(container);
-      container.appendChild(cardClone)
+      container.appendChild(cardClone);
       document.body.appendChild(modalOverlay);
 
       closeButton.addEventListener('click', () => {
