@@ -302,6 +302,7 @@
 
 @media screen and (min-width: 1440px) {
   .abme-swiper {
+    margin: 0 32px;
     gap: 72px;
     justify-content: center;
   }
