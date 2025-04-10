@@ -1,29 +1,55 @@
 .covers {
     padding: 0;
     background-color: rgba(217, 217, 217, 0.04);
-    background-image: url(../img/covers/elements_vectors@1x.png);
-    background-size: cover;
 }
 
-.covers .container {
+.covers-container {
     position: relative;
     height: 508px;
     padding: 0;
     overflow: hidden;
-}
 
-@media only screen and (min-width: 768px) {
-    .covers .container {
-        height: 960px;
-    }
+    background-image: url(../img/covers/bg/coversbg_m@1x.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 @media (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .covers {
-        background-image: url(../img/covers/elements_vectors@2x.png);
+    .covers-container {
+        background-image: url(../img/covers/bg/coversbg_m@2x.webp);
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .covers-container {
+        height: 960px;
+        background-image: url(../img/covers/bg/coversbg_t@1x.webp);
+    }
+
+    @media (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .covers-container {
+            background-image: url(../img/covers/bg/coversbg_t@2x.webp);
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .covers-container {
+        background-image: url(../img/covers/bg/coversbg_d@1x.webp);
+    }
+
+    @media (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .covers-container {
+            background-image: url(../img/covers/bg/coversbg_d@2x.webp);
+        }
+    }
+}
+
+
 
 .covers-wrapper {
     position: absolute;
