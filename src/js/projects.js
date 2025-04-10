@@ -4,7 +4,7 @@ import { Keyboard, Navigation } from 'swiper/modules';
 
 const proj_btn_next = document.querySelector('.proj-button-right');
 const proj_btn_prev = document.querySelector('.proj-button-left');
-const swiper = new Swiper('.proj-swiper', {
+const projSwiper = new Swiper('.proj-swiper', {
   direction: 'horizontal',
   simulateTouch: true,
   speed: 1200,

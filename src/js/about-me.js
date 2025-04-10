@@ -1,8 +1,8 @@
 import Accordion from 'accordion-js';
-// import 'accordion-js/dist/accordion.min.css';
-import 'swiper/css';
-import { Navigation } from 'swiper/modules';
 import Swiper from 'swiper';
+import { Keyboard, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 document.addEventListener('DOMContentLoaded', () => {
   // document.querySelectorAll('.accordion-header').forEach(header => {
@@ -12,44 +12,49 @@ document.addEventListener('DOMContentLoaded', () => {
   //   });
   // });
 
-  const swiper = new Swiper('.aboutMe-swiper', {
-    spaceBetween: 0,
-    loop: true,
-    modules: [Navigation],
-    navigation: {
-      nextEl: '.aboutMe-swiper-button-next',
-    },
-    keyboard: {
-      enabled: true,
-      onlyInViewport: false,
-    },
-    breakpoints: {
-      1440: {
-        slidesPerView: 6,
-      },
-      768: {
-        slidesPerView: 3,
-      },
-      320: {
-        slidesPerView: 2,
-      },
-    },
-  });
+  //   abmeSwiper.on('slideChange', () => {
+  //     document
+  //       .querySelectorAll('.swiper-slide')
+  //       .forEach(slide => slide.classList.remove('abme-active'));
+  //     abmeSwiper.slides[abmeSwiper.activeIndex].classList.add('abme-active');
+  //   });
+  //
 
-  swiper.on('slideChange', () => {
-    document
-      .querySelectorAll('.swiper-slide')
-      .forEach(slide => slide.classList.remove('active'));
-    swiper.slides[swiper.activeIndex].classList.add('active');
+  const abme_accordion = new Accordion('.abme-accordion', {
+    duration: 400,
+    showMultiple: true,
+    elementClass: 'abme-ac', //ac
+    triggerClass: 'abme-ac-trigger', //ac-trigger
+    panelClass: 'abme-ac-panel', //ac-panel
+    activeClass: 'abme-ac-open', //is-active
   });
+  abme_accordion.open(0);
 });
 
-const abme_accordion = new Accordion('.abme-accordion', {
-  duration: 400,
-  showMultiple: true,
-  elementClass: 'abme-ac', //ac
-  triggerClass: 'abme-ac-trigger', //ac-trigger
-  panelClass: 'abme-ac-panel', //ac-panel
-  activeClass: 'abme-ac-open', //is-active
+const abmeSwiper = new Swiper('.abme-skills', {
+  modules: [Keyboard, Navigation],
+  containerModifierClass: 'abme-',
+  slideActiveClass: 'abme-slide-active',
+  loop: true,
+  loopedSlides: 12,
+  slidesPerView: 2,
+  simulateTouch: true,
+  touchRatio: 1,
+  watchSlidesProgress: true,
+  // allowSlidePrev: false,
+  navigation: {
+    nextEl: '.abme-nextskill',
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+    1440: {
+      slidesPerView: 6,
+    },
+  },
 });
-abme_accordion.open(0);
