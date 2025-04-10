@@ -28,6 +28,8 @@ function onMenuCloseClick(evt) {
 }
 // #region Nyan
 const logo = document.querySelector('.hdr-nav-logo');
+console.dir(logo.firstElementChild);
+
 let srcset;
 let nyanStopDelay;
 let nyanStarted = false;
@@ -52,7 +54,7 @@ function pauseAudio() {
     audio.currentTime = 0;
     logo.classList.remove('js-logo');
     logo.firstElementChild.style.animation = '';
-    logo.firstElementChild.setAttribute('srcset', srcset);
+    logo.firstElementChild.firstElementChild.srcset = srcset;
     // logo.firstElementChild.setAttribute('src', logoJpg);
     logo.removeEventListener('mouseover', playAudio);
     logo.removeEventListener('mouseout', pauseAudio);
@@ -62,9 +64,9 @@ function pauseAudio() {
 }
 function goNyan() {
   logo.firstElementChild.style.animation = 'nyan 400ms infinite linear';
-  srcset = logo.firstElementChild.srcset;
-  logo.firstElementChild.removeAttribute('srcset');
-  logo.firstElementChild.setAttribute('src', uniPng);
+  srcset = logo.firstElementChild.firstElementChild.srcset;
+  // srcset = logo.firstElementChild.lastElementChild.currentSrc;
+  logo.firstElementChild.firstElementChild.srcset = uniPng;
 }
 
 function setNyan() {
