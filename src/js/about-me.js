@@ -5,21 +5,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 document.addEventListener('DOMContentLoaded', () => {
-  // document.querySelectorAll('.accordion-header').forEach(header => {
-  //   header.addEventListener('click', () => {
-  //     const item = header.parentElement;
-  //     item.classList.toggle('open');
-  //   });
-  // });
-
-  //   abmeSwiper.on('slideChange', () => {
-  //     document
-  //       .querySelectorAll('.swiper-slide')
-  //       .forEach(slide => slide.classList.remove('abme-active'));
-  //     abmeSwiper.slides[abmeSwiper.activeIndex].classList.add('abme-active');
-  //   });
-  //
-
   const abme_accordion = new Accordion('.abme-accordion', {
     duration: 400,
     showMultiple: true,
@@ -41,7 +26,6 @@ const abmeSwiper = new Swiper('.abme-skills', {
   simulateTouch: true,
   touchRatio: 1,
   watchSlidesProgress: true,
-  // allowSlidePrev: false,
   navigation: {
     nextEl: '.abme-nextskill',
   },

@@ -201,7 +201,6 @@ textarea:-webkit-autofill::first-line {
   cursor: pointer;
   border: none;
   flex-shrink: 0;
-  /* transition: background-color 0.5 ease; */
 }
 
 .form-btn:hover {
@@ -266,8 +265,6 @@ textarea:-webkit-autofill::first-line {
     font-size: 16px;
   }
 }
-
-/*  */
 
 /* modal */
 .backdrop {
