@@ -1,18 +1,18 @@
 .hero {
-    /* background-image: url(../img/hero/hero_m@1x.webp), linear-gradient(to right, #ed3b44 0%, #69292d 32.27%, #1c1d20 50.32%, #1c1d20 100%);
+    background-image: url(../img/hero/hero_m@1x.webp), linear-gradient(to right, #ed3b44 0%, #69292d 32.27%, #1c1d20 50.32%, #1c1d20 100%);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     padding-top: 281px;
 }
 
-/* @media only screen and (min-resolution: 192dpi),
+@media only screen and (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero {
         background-image: url(../img/hero/hero_m@2x.webp),
             linear-gradient(to right, #ed3b44 0%, #69292d 32.27%, #1c1d20 50.32%, #1c1d20 100%);
     }
-} */
+}
 
 .hero-title {
     font-size: 50px;
@@ -66,18 +66,18 @@
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
     .hero {
-        /* background-image: url(../img/hero/hero_t@1x.webp), linear-gradient(to right, #ed3b44 0%, #69292d 32.27%, #1c1d20 50.32%, #1c1d20 100%); */
+        background-image: url(../img/hero/hero_t@1x.webp), linear-gradient(to right, #ed3b44 0%, #69292d 32.27%, #1c1d20 50.32%, #1c1d20 100%);
         padding-top: 300px;
         padding-bottom: 32px;
     }
 
-    /* @media only screen and (min-resolution: 192dpi),
+    @media only screen and (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero {
             background-image: url(../img/hero/hero_t@2x.webp),
                 linear-gradient(to right, #ed3b44 0%, #69292d 32.27%, #1c1d20 50.32%, #1c1d20 100%);
         }
-    } */
+    }
 
     .hero-title {
         font-size: 90px;
@@ -108,17 +108,17 @@
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
-    /* .hero {
+    .hero {
         background-image: url(../img/hero/hero_d@1x.webp), linear-gradient(to right, #ed3b44 0%, #69292d 32.27%, #1c1d20 50.32%, #1c1d20 100%);
-    } */
+    }
 
-    /* @media only screen and (min-resolution: 192dpi),
+    @media only screen and (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero {
             background-image: url(../img/hero/hero_d@2x.webp),
                 linear-gradient(to right, #ed3b44 0%, #69292d 32.27%, #1c1d20 50.32%, #1c1d20 100%);
         }
-    } */
+    }
 
     .hero-title {
         margin: 0 auto 243px;
