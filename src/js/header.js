@@ -1,5 +1,5 @@
 import uniPng from '/img/header/uni.webp';
-// import logoJpg from '/img/header/logo@1x.webp';
+
 const menuBtnOpn = document.getElementById('hdr-openmenu');
 menuBtnOpn.addEventListener('click', onMenuOpenClick);
 
@@ -12,7 +12,7 @@ function onMenuOpenClick(evt) {
     menu = document.querySelector('.hdr-menu');
     closeDelay = setTimeout(() => {
       menu.classList.remove('menu-visible');
-    }, 5000);
+    }, 1000);
   } else {
     menu = document.querySelector('.mobile-menu');
     menu.addEventListener('click', onMenuCloseClick);
@@ -26,6 +26,7 @@ function onMenuCloseClick(evt) {
     evt.currentTarget.removeEventListener('click', onMenuCloseClick);
   }
 }
+
 // #region Nyan
 const logo = document.querySelector('.hdr-nav-logo');
 console.dir(logo.firstElementChild);
@@ -55,7 +56,6 @@ function pauseAudio() {
     logo.classList.remove('js-logo');
     logo.firstElementChild.style.animation = '';
     logo.firstElementChild.firstElementChild.srcset = srcset;
-    // logo.firstElementChild.setAttribute('src', logoJpg);
     logo.removeEventListener('mouseover', playAudio);
     logo.removeEventListener('mouseout', pauseAudio);
     logo.removeEventListener('animationend', goNyan);
@@ -65,7 +65,6 @@ function pauseAudio() {
 function goNyan() {
   logo.firstElementChild.style.animation = 'nyan 400ms infinite linear';
   srcset = logo.firstElementChild.firstElementChild.srcset;
-  // srcset = logo.firstElementChild.lastElementChild.currentSrc;
   logo.firstElementChild.firstElementChild.srcset = uniPng;
 }
 

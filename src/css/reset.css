@@ -1,5 +1,4 @@
 @import 'modern-normalize/modern-normalize.css';
-/* @import 'node_modules/modern-normalize/modern-normalize.css'; */
 
 h1,
 h2,
@@ -10,10 +9,6 @@ h6,
 p {
   margin: 0;
 }
-
-/* p:last-child {
-  margin-bottom: 0;
-} */
 
 ul {
   margin: 0;

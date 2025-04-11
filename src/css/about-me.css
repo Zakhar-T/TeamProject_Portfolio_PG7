@@ -77,18 +77,8 @@
 }
 
 .about-me__image img {
-  /* height: 100%; */
   border-radius: 24px;
-  /* object-fit: cover; */
-  /* overflow: hidden; */
 }
-
-/* 
-@media only screen and (min-width: 768px) {
-  .about-me__image {
-    height: auto;
-  }
-} */
 
 @media only screen and (min-width: 1440px) {
   .about-me-text-section {
@@ -155,18 +145,6 @@
   transition: height 0.3s ease;
 }
 
-/* overflow: hidden; */
-/* transition: max-height 0.3s ease; */
-/* .accordion-item.open>.accordion-header {
-  margin-bottom: 12px;
-}
-
-@media only screen and (min-width: 768px) {
-  .accordion-item.open>.accordion-header {
-    margin-bottom: 8px;
-  }
-} */
-
 .accordion-toggle {
   background-color: transparent;
   border: none;
@@ -211,16 +189,6 @@
     margin-bottom: 16px;
   }
 }
-
-/* .abme-content {
-  font-weight: 500;
-  font-size: 16px;
-
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-  color: #fafafa;
-} */
-
 
 /* Rotate icon if open */
 .abme-ac.abme-ac-open .accordion-toggle {
@@ -302,35 +270,8 @@
 
 @media screen and (min-width: 1440px) {
   .abme-swiper {
+    padding: 0 32px;
     gap: 72px;
     justify-content: center;
   }
 }
-
-/* 
-.skills-slider .aboutMe-swiper-button-next:active {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-@media (max-width: 375px) {
-  .skills-slider .swiper-slide {
-    width: 130px !important;
-    height: 130px;
-    font-size: 13px;
-  }
-
-  .skills-slider {
-    padding: 5px;
-  }
-
-  .aboutMe-swiper {
-    max-width: 260px;
-  }
-
-  .skills-slider .aboutMe-swiper-button-next {
-    width: 28px;
-    height: 28px;
-    right: 0px
-  }
-
-} */
