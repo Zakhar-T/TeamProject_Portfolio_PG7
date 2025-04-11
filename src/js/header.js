@@ -12,7 +12,7 @@ function onMenuOpenClick(evt) {
     menu = document.querySelector('.hdr-menu');
     closeDelay = setTimeout(() => {
       menu.classList.remove('menu-visible');
-    }, 1000);
+    }, 5000);
   } else {
     menu = document.querySelector('.mobile-menu');
     menu.addEventListener('click', onMenuCloseClick);
